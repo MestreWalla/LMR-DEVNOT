@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+    <iframe src="header.html" frameborder="0"></iframe>
+    <h2>Pagina de Cadastro</h2>
+    <form action="">
+        <!--Email-->
+        <label for="pmail" title="Mail">E-mail:</Label> <br>
+        <input type="text" name="e-mail" id="pmail" placeholder="Seu E-mail"/> <br>
+        <!--Senha-->
+        <label for="psenha" title="Senha">Senha:</label> <br>
+        <input type="password" name="senha" id="psenha" placeholder="Sua Senha"/> <br>
+        <!--Nome-->
+        <label for="pnome" title="nome">Nome:</label> <br>
+        <input type="text" name="nome" id="pnome" placeholder="Seu Nome"/> <br> <!--placeholder adiciona o texto dentro da caixa-->
+        <!--Sobrenome-->
+        <label for="psnome" title="snome">Sobrenome:</label> <br>
+        <input type="text" name="snome" id="psnome" placeholder="Seu Sobrenome">
+        <br> <hr>
+        <!--IMPUT de Seleção unica (PSe o name estiver diferente um dos outros ele permitira selecionar varios)-->
+        <label for="">Sexo:</label><br>
+        <input type="radio" name="Sexo" >Feminino<br>
+        <input type="radio" name="Sexo" >Masculino<br>
+        <br>
+        <!-- Checkbox -->
+        <label for="">Bens Que possui:</label><br>
+        <input type="checkbox" name="Bens" >Casa<br>
+        <input type="checkbox" name="Bens" >Carro<br>
+        <input type="checkbox" name="Bens" >Computador<br>
+        <hr>
+        Selecione a faixa etaria
+        <br>
+        <select name="Faixa Idade" id="">
+            <option value="">Selecione a faixa etária</option>
+            <option value="1">19-24 anos</option>
+            <option value="2">25-34 anos</option>
+            <option value="3">35-44 anos</option>
+            <option value="4">45-54 anos</option>
+            <option value="5">55 anos ou mais</option>
+        </select>
+        <br>
+        <hr>
+        Observações: <br>
+        <textarea name="Observações" id="" cols="50" rows="5" placeholder="Escreva suas observações"></textarea> <!--campo para escrever-->
+        <br>
+        <input type="Submit" value="Enviar Dados">
+        <input type="Reset" value="Limpar Dados">
+        <input type="button" value="Voltar" onclick="parent.location='index.html'"> <!--onclick quando for clicado-->
+        <hr>
+        <!--Botão Enviar-->
+        <input type="submit" value="Enviar">
+        <!--Botão Limpar-->
+        <input type="reset" value="Limpar">
+        <a href="login.html"><input type="button" value="Logar"></a>
+    </form>
+    <iframe src="footer.html" frameborder="0"></iframe>
+</body>
+</html>
