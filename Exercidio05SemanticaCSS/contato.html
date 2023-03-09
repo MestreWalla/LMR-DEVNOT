@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body id="login-cadastro">
+    <div class="center">
+        <table border="0">
+            <thead>
+            <th>
+                    <br>
+                    <img src="img/contacticon.png" height="100px">
+                    <h1>Contato</h1>
+                    <hr> 
+                    <form action="">
+                        <!--Nome Completo-->
+                        <label for="cname" title="Mail">Nome:</Label>
+                        <input type="text" name="nome" id="name" placeholder="Nome Completo" />
+                        <br><br>
+                        <!--Email-->
+                        <label for="lmail" title="Mail">E-mail:</Label>
+                        <input type="text" name="e-mail" id="lmail" placeholder="E-mail" />
+                        <br>
+                        <hr>
+                        Observações: <br>
+                        <textarea name="Observações" id="" cols="50" rows="5" placeholder="Escreva suas observações"></textarea> <!--campo para escrever-->
+                        <br>
+                        <input type="Reset" value="Limpar Dados">
+                        <hr>
+                        <br>
+                        <!--Botão Enviar-->
+                        <input type="submit" value="Enviar">
+                        <!--Botão Cadastro-->
+                        <a href="cadastro.html"><input type="button" value="Cadastrar"></a>
+                        <br><br>
+                </th>
+                </form>
+    </div>
 </body>
+
 </html>

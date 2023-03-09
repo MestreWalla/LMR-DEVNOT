@@ -1,6 +1,6 @@
 /* COMENTARIO NO CSS */
 body {
-    background-color: darkgray;
+    background-color: rgb(169, 169, 169);
 }
 
 #menu {
@@ -43,16 +43,16 @@ body {
     color: azure;
 }
 
-/* LOGIN */
+/* LOGIN/CADASTRO */
 
-#bodylogin {
-    background-color: rgb(219, 54, 54);
+#login-cadastro {
+    background-color: rgb(131, 119, 119);
 }
 .center h1 {
     color: aliceblue;
 }
 .center table {
-    background-color: darkslategray;
+    background-color: rgb(90, 124, 124);
     border-radius: 8px;
     margin: auto;
     margin-top: 50px;
