@@ -46,13 +46,14 @@ body {
 /* LOGIN/CADASTRO */
 
 #login-cadastro {
-    background-color: rgb(70, 130, 180);
+    background-color: rgb(100, 118, 135);
 }
 .center h1 {
     color: aliceblue;
 }
 .center table {
     background-color: rgb(168, 204, 215);
+    box-shadow: 5px 5px 10px gray;
     border-radius: 8px;
     margin: auto;
     margin-top: 50px;
