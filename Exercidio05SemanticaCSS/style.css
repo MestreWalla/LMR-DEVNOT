@@ -47,36 +47,16 @@ body {
 /* LOGIN/CADASTRO */
 
 #login-cadastro {
-  background: rgb(51, 59, 182);
-  background: linear-gradient(
-    151deg,
-    rgba(51, 59, 182, 1) 0%,
-    rgba(202, 53, 189, 1) 54%,
-    rgba(45, 252, 253, 1) 100%
-  );
+    background-color: rgb(131, 119, 119);
 }
 .center h1 {
   color: aliceblue;
 }
 .center table {
-  background-color: rgba(174, 222, 235, 0.336);
-  border-radius: 8px;
-  margin: auto;
-  margin-top: 50px;
-  box-shadow: 1px 1px;
-}
-.botoes {
-  background-color: rgba(174, 222, 235, 0.336);
-  border-radius: 10px;
-  box-shadow: 1px 1px;
-  border: 5px;
-}
-.caixa {
-  margin-left: 2px;
-  border-radius: 10px;
-}
-.reader {
-  flex-direction: row-reverse;
+    background-color: rgb(90, 124, 124);
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 50px;
 }
 /* .login { */
 /* margin-left: auto; */
