@@ -18,7 +18,7 @@ body {
 
 @media screen and (max-width: 998px) {
     .cima {height: 480px; padding: 0px 20px;}
-    .cima .texto {font-size: 24px;}
+    .cima .texto {font-size: 24px; padding: 10px;}
     .cima h1 {font-size: 28px; color: white;}
     .cima h2 {font-size: 15px; color: white;}
     .textoTitulo {font-size: 14px; margin-top: 90px;}
