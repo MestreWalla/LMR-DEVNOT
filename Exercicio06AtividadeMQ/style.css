@@ -2,7 +2,7 @@ body {
     background: rgb(0, 0, 0);
 }
 #menu {background-color: red;}
-.linkMenu {color: white; font-size: 25px; float: right;}
+.linkMenu {color: white; font-size: 25px; float: right; margin-left: 20px;}
 .linkLogo {height: 25px;}
 .cima {width: 90%; height: 600px; padding: 60px; margin: 0 auto; display: table;}
 .cima h1{color: white;}
@@ -12,7 +12,8 @@ body {
 .baixo h1{color: white;}
 .baixo p{color: white;}
 .baixo img{width: 40%; height: 500px; float: left;}
-.textoTitulo {float: inline-end;}
+.textoTitulo{float: inline-end;}
+.insideMenu{padding: 10px;}
 
 @media screen and (max-width: 998px) {
     .cima {height: 480px; padding: 0px 20px;}
