@@ -1,0 +1,47 @@
+body {
+    background: rgb(0, 0, 0);
+}
+#menu {background-color: red;}
+.linkMenu {color: white; font-size: 25px; float: right;}
+.linkLogo {height: 25px;}
+.cima {width: 90%; height: 600px; padding: 60px; margin: 0 auto; display: table;}
+.cima h1{color: white;}
+.cima h2{color: white;}
+.cima img{width: 40%; height: 500px; float: right;}
+.baixo {width: 90%; height: 600px; padding: 60px; margin: 0 auto; display: table;}
+.baixo h1{color: white;}
+.baixo p{color: white;}
+.baixo img{width: 40%; height: 500px; float: left;}
+.textoTitulo {float: inline-end;}
+
+@media screen and (max-width: 998px) {
+    .cima {height: 480px; padding: 0px 20px;}
+    .cima .texto {font-size: 24px;}
+    .cima h1 {font-size: 28px; color: white;}
+    .cima h2 {font-size: 15px; color: white;}
+    .textoTitulo {font-size: 14px; margin-top: 90px;}
+    .cima img {width: 40%; height: 300px; margin-top: 90px;}
+}
+
+@media screen and (max-width: 640px) {
+    .cima {padding: 0px 20px 20px;}
+    .cima .texto {width: 100%; text-align: center; margin-top: 20px;}
+    .cima h1 {font-size: 18px;}
+    .cima p {font-size: 12px; margin-top: 20px;}
+    .cima img {width: 100%; height: 300px; margin-top: 20px; float: none;  }}
+
+@media screen and (max-width: 998px) {
+        .baixo {height: 480px; padding: 0px 20px;}
+        .baixo .texto {font-size: 24px;}
+        .baixo h1 {font-size: 28px; color: white;}
+        .baixo h2 {font-size: 15px; color: white;}
+        .baixo p {font-size: 14px; margin-top: 90px;}
+        .baixo img {width: 40%; height: 300px; margin-top: 90px;}
+    }
+    
+@media screen and (max-width: 640px) {
+        .baixo {padding: 0px 20px 20px;}
+        .baixo .texto {width: 100%; text-align: center; margin-top: 20px;}
+        .baixo h1 {font-size: 18px;}
+        .baixo p {font-size: 12px; margin-top: 20px;}
+        .baixo img {width: 100%; height: 300px; margin-top: 20px; float: none;  }}
