@@ -8,7 +8,7 @@ body {
 .cima h1{color: white;}
 .cima h2{color: white;}
 .cima img{width: 40%; height: 500px; float: right;}
-.baixo {width: 90%; height: 600px; padding: 60px; margin: 0 auto; display: table;}
+.baixo {width: 90%; height: 600px; padding: 60px; margin-left: 20px; display: table;}
 .baixo h1{color: white; margin-right: 10px}
 .baixo p{color: white;}
 .baixo img{width: 40%; height: 500px; float: left;}
