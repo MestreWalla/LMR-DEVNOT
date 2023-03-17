@@ -46,6 +46,6 @@ body {
     
 @media screen and (max-width: 800px) {
     .linkMenu {visibility: hidden; opacity: 0; transition: visibility 0; opacity 0.5s linear;}
-    .linkMenu:hover > .menuMenu {visibility: visible;
+    .linkMenu:hover > menuMenu {visibility: visible;
     .menuMenu {visibility: visible; opacity: 1;}
 }
