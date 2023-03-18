@@ -45,8 +45,7 @@ body {
     .baixo img {width: 100%; height: 300px; margin-top: 20px; float: none;}}
     .menuMenu {display: inline};
 @media screen and (max-width: 800px) {
-  .menuMenu{display: inline;}
+    .menuMenu{display: inline; opacity: 1;}
     .linkMenu {display: none; opacity: 0; transition: visibility 0; opacity 0.5s linear;}
     .linkMenu:hover > button {display: inline;
-    .menuMenu{display: inline; opacity: 1;}
 }
