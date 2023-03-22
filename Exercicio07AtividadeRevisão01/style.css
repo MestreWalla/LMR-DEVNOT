@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    margin: 0px; /* Remover margem do externo da pagina*/
+}
+.nav{
+    background-color: aliceblue; /* Fundo da divisão menu */
+    width: 100%; /* Fundo Alinhar por completo com o navegador na horizontal */
+    height: 80px; /* Altura da divisão menu */
+    display: flex; /* Alinhar tudo um ao lado do outro */
+    justify-content: space-between; /* Alinhar  espaço entre cada elemento*/
+    align-items: center; /* Alinhar na vertical*/
+}
+.nav img{
+    height: 50px; /* Medida em pixel da altura do logo */
+    padding: 15px; /* Espaçamento em volta do objeto*/
+}
+.hamburger {
+    display: none;
+}
+.nav a{
+    float: center;
+    padding: 20px; /* Espaçamento em volta do objeto*/
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    justify-content: space-between;
+}
+.menu{width: 50%;}
+.container{padding: 1%; height: 100%; margin: 0 auto}
+.textos {background-color: gray; color: white; padding: 20px; width: 40%; text-align: center; margin: 0 auto; border-radius: 10px; border: 5px solid}
+.textos h1{font-size: 20px;}
+.textos h2{font-size: 10px;}
+
+.quadros {width: 80%; height: 60vh; background-color: white; margin: 0 auto; margin-top: 10px; border-radius: 10px;}
+.linhaUm {width: 100%; height: 30vh; display: flex; justify-content: space-around; align-items: center;}
+.linhaDois {width: 100%; height: 30vh; display: flex; justify-content: space-around; align-items: center;}
+.quadros .um {background: rgb(106, 174, 172); height: 28vh; width: 23%; border-radius: 8px;}
+.quadros .dois {background: rgb(155, 179, 134); height: 28vh; width: 23%; border-radius: 8px;}
+
+@media screen and (max-width: 800px){
+.hamburger{display: inline;}
+.nav a{display: none;}
+}
