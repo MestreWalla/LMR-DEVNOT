@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    margin: 0px; /* Remover margem do externo da pagina*/
+}
+.vermelho .amarelo .verde .axul {
+  width: 30px;
+  height: 30px;
+}
+.vermelho {
+  background: red;
+}
+.amarelo {
+  background: yellow;
+}
+.verde {
+  background: green;
+}
+.azul {
+  background: blue;
+}
