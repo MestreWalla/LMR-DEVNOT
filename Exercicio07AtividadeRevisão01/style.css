@@ -32,7 +32,7 @@ body{
 .textos h1{font-size: 20px;}
 .textos h2{font-size: 10px;}
 
-.quadros {width: 80%; height: 60vh; background-color: white; margin: 0 auto; margin-top: 10px; border-radius: 10px;}
+.quadros {width: 80%; height: 60vh; background-color: white; margin: 0 auto; margin-top: 10px; border-radius: 10px; padding: 1vh;}
 .linhaUm {width: 100%; height: 30vh; display: flex; justify-content: space-around; align-items: center;}
 .linhaDois {width: 100%; height: 30vh; display: flex; justify-content: space-around; align-items: center;}
 .quadros .um {background: rgb(106, 174, 172); height: 28vh; width: 23%; border-radius: 8px;}
