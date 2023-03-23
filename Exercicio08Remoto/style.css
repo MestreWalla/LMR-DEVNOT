@@ -19,7 +19,7 @@ body{
   height: 50%;
   display: flex;
   justify-content: space-between;
-  justify-items: flex-end;
+  align-items: flex-end;
 }
 .vermelho {
   background: red;
