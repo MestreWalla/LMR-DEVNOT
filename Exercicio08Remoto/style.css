@@ -7,7 +7,7 @@ body{
   height: 100vh;
   justify-content: space-between;
 }
-.tela text{
+.tela h1{
   font-weight: bold;
   align-items: center;
 }
