@@ -10,13 +10,13 @@ body{
   width: 100%;
   height: 50%;
   display: flex;
-  justify-content: ;
+  justify-content: space-between;
 }
 .linhaDois {
   width: 100%;
   height: 50%;
   display: flex;
-  justify-content: ;
+  justify-content: space-between;
 }
 .vermelho {
   background: red;
