@@ -9,7 +9,7 @@ body{
 }
 .tela h1{
   font-weight: bold;
-  align-items: center;
+  justify-content: center;
   font-size: 4px;
   color: black;
 }
