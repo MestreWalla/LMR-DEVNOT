@@ -36,14 +36,17 @@ body{
   background: yellow;
   width: 60px;
   height: 60px;
+  text-align: center;
 }
 .verde {
   background: green;
   width: 60px;
   height: 60px;
+  text-align: center;
 }
 .azul {
   background: blue;
   width: 60px;
   height: 60px;
+  text-align: center;
 }
