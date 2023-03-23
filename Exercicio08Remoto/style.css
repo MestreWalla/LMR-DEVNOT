@@ -16,7 +16,7 @@ body{
   width: 100%;
   height: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: ;
 }
 .vermelho {
   background: red;
