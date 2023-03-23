@@ -6,7 +6,6 @@ body{
   width: 100%;
   height: 100vh;
   justify-content: space-between;
-  padding: 10px;
 }
 .tela h1{
   font-weight: bold;
