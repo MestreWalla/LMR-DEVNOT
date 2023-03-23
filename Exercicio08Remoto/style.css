@@ -3,8 +3,8 @@ body{
     margin: 0px; /* Remover margem do externo da pagina*/
 }
 .tela {
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 .vermelho .amarelo .verde .axul {
   width: 30px;
