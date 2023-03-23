@@ -16,6 +16,8 @@ body{
 }
 .vermelho {
   background: red;
+  width: 30px;
+  height: 30px;
 }
 .amarelo {
   background: yellow;
