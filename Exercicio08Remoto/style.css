@@ -2,19 +2,51 @@ body{
     background-color: black;
     margin: 0px; /* Remover margem do externo da pagina*/
 }
-.vermelho .amarelo .verde .axul {
-  width: 30px;
-  height: 30px;
+.tela {
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+}
+.tela h1{
+  font-weight: bold;
+  font-size: 4px;
+  color: black;
+}
+.linhaUm {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.linhaDois {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .vermelho {
   background: red;
+  width: 60px;
+  height: 60px;
+  text-align: center;
 }
 .amarelo {
   background: yellow;
+  width: 60px;
+  height: 60px;
+  text-align: center;
 }
 .verde {
   background: green;
+  width: 60px;
+  height: 60px;
+  text-align: center;
 }
 .azul {
   background: blue;
+  width: 60px;
+  height: 60px;
+  text-align: center;
 }
