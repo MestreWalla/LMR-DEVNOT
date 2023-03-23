@@ -2,6 +2,10 @@ body{
     background-color: black;
     margin: 0px; /* Remover margem do externo da pagina*/
 }
+.tela {
+  width: 100vh;
+  height: 100vh;
+}
 .vermelho .amarelo .verde .axul {
   width: 30px;
   height: 30px;
