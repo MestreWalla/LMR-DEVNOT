@@ -7,6 +7,10 @@ body{
   height: 100vh;
   justify-content: space-between;
 }
+.tela text{
+  font-weight: bold;
+  align-items: center;
+}
 .linhaUm {
   width: 100%;
   height: 50%;
