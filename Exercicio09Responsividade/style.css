@@ -1,32 +1,45 @@
-body {margin: 0; background-color: black;}
-header { margin: 0; background-color: red; display: flex;
+body {margin: 0; background-color: rgb(75, 15, 130);}
+header { margin: 0; background-color: rgba(255, 0, 0, 0.696); display: flex;
     justify-content: space-between; align-items: center; margin-top: 15px;
-    border-top-right-radius: 20px; border-bottom-right-radius: 20px; margin-right: 15px;
-}
+    border-top-right-radius: 20px; border-bottom-right-radius: 20px; margin-right: 0px; width: 95%;
+    box-shadow: 3px 4px 5px 0px black; backdrop-filter: blur(3px); padding: 5px;
+    position: fixed; z-index: 1; top: 0; /* Fixar Header*/}
 header img {height: 20px; padding: 5px;}
-header a {
-    text-decoration: none; font-weight: bold; align-items: center;
-    margin-left: 10px; margin-right: 10px; color: white;
-}
+header a {text-decoration: none; font-weight: bold; align-items: center;
+    margin-left: 10px; margin-right: 10px; color: white;}
 .hamburger {display: none;}
+.parteUm {background-image: url(img/background.png); background-size:cover; padding: 20px; padding-top: 100px; padding-bottom: 100px;}
+.parteUm h1 {color: white; font-size: 50px; font-family: Arial, Helvetica, sans-serif; 
+    text-shadow: 2px 2px 20px #000000;}
+.parteUm h2 {color: rgb(255, 114, 114); font-size: 40px; text-shadow: 2px 2px 4px #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+.parteUm img {height: 40px;}
+.parteDois {display: flex; margin: 50px; flex-direction: column;}
+.linhaUm {display: flex;}
+.linhaDois {padding: 20px; height: 80vh;}
+.parteDois h1 {color: white; font-size: 50px;}
+.parteDois h2 {color: white; font-size: 30px; text-shadow: 2px 2px 4px #000000;}
+.parteDois h3 {color: white; font-size: 20px;}
+.parteDois h5 {color: white; font-size: 18px;}
+.parteDois img {width: 80vh; margin-top: 10px; box-shadow: 3px 4px 5px 0px black;}
 
 /* CRIADOR */
 .senai {display: flex; align-items: center; background-color: none; height: 20px;
     background-color: rgb(26, 50, 101); border-radius: 15px;
-    width: 45vh; box-shadow: 3px 4px 5px 0px black; display: none;
-}
+    width: 45vh; box-shadow: 3px 4px 5px 0px black; display: none;}
 .criador h5 {margin-left: 20px; color:white; font-weight: bold;}
-.parteUm {background-image: url(img/fundo.webp); width: 100%; padding: 20px;}
-.parteUm h1 {color: white; font-size: 50px; font-family: Arial, Helvetica, sans-serif;}
-.parteUm h2 {color: red; font-size: 40px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-.parteUm img {height: 40px;}
-.parteDois {display: flex; margin: 50px;}
-.linhaDois {padding: 20px;}
-.parteDois img {width: 80vh;}
-.parteDois h1 {color: white; font-size: 50px;}
-.parteDois h5 {color: white; font-size: 20px;}
+
 @media  (max-width: 800px) {
-    .hamburger {display:inline; background-color:rgb(255, 181, 169); border-radius: 20px;}
+    .hamburger {display:inline; background-color:rgb(255, 186, 186); border-radius: 20px; border-style:outset; border-color: black;}
     .menu {display: none;}
+    .parteUm h1 {font-size: 30px;}
+    .parteUm h2 {font-size: 30px;}
+    .parteDois {flex-direction: column;}
+    .linhaUm img {margin: 0 auto; width: 100%;}
+    .linhaUm {flex-direction: column;}
+    .linhaDois {text-align: center;}
+    .parteDois h1 {font-size: 20px; margin: 0 auto; margin-bottom: 20px;}
+    .linhaDois h2 {font-size: 25px;}
+    .linhaDois h3 {font-size: 20px;}
+    .linhaDois h5 {font-size: 15px;}
 }
