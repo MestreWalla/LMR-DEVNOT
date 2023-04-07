@@ -30,7 +30,7 @@ header a {text-decoration: none; font-weight: bold; align-items: center;
 .criador h5 {margin-left: 20px; color:white; font-weight: bold;}
 
 @media  (max-width: 800px) {
-    .hamburger {display:inline; background-color:rgb(255, 186, 186); &:hover {background-color:blue;} border-radius: 20px; border-style:outset; border-color: black;}
+    .hamburger {display:inline; background-color:rgb(255, 186, 186); border-radius: 20px; border-style:outset; border-color: black;}
     .menu {display: none;}
     .parteUm h1 {font-size: 30px;}
     .parteUm h2 {font-size: 30px;}
