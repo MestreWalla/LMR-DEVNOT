@@ -7,7 +7,10 @@ header { margin: 0; background-color: rgba(255, 0, 0, 0.696); display: flex;
 header img {height: 20px; padding: 5px;}
 header a {text-decoration: none; font-weight: bold; align-items: center;
     margin-left: 10px; margin-right: 10px; color: white;}
-.hamburger {display: none;}
+header a:hover {color: rgb(164, 254, 159); font-size: 20px;}
+.hamburger {display: none; background-color:rgb(255, 186, 186); border-radius: 20px; border-style:outset; border-color: black; transition: transform 0.3s ease-in-out;}
+.hamburger:hover {transform: rotate(90deg); background-color:rgb(250, 111, 111);}
+/* .hamburger:active {transform: scale(0.95);} */
 .parteUm {background-image: url(img/background.png); background-size:cover; padding: 20px; padding-top: 100px; padding-bottom: 100px;}
 .parteUm h1 {color: white; font-size: 50px; font-family: Arial, Helvetica, sans-serif; 
     text-shadow: 2px 2px 20px #000000;}
@@ -30,7 +33,7 @@ header a {text-decoration: none; font-weight: bold; align-items: center;
 .criador h5 {margin-left: 20px; color:white; font-weight: bold;}
 
 @media  (max-width: 800px) {
-    .hamburger {display:inline; background-color:rgb(255, 186, 186); border-radius: 20px; border-style:outset; border-color: black;}
+    .hamburger {display:inline;}
     .menu {display: none;}
     .parteUm h1 {font-size: 30px;}
     .parteUm h2 {font-size: 30px;}
@@ -42,4 +45,5 @@ header a {text-decoration: none; font-weight: bold; align-items: center;
     .linhaDois h2 {font-size: 25px;}
     .linhaDois h3 {font-size: 20px;}
     .linhaDois h5 {font-size: 15px;}
+    .hamburger:active {zoom: 95%;}
 }

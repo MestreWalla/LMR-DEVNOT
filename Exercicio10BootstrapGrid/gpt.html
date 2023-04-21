@@ -1,69 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Meu Site em Bootstrap</title>
-  <!-- Incluindo os arquivos CSS do Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-<body>
-  <!-- Cabeçalho -->
-  <header>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Meu Site</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <head>
+    <title>Minha página com efeitos</title>
+    <style>
+      #meu-div {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+      }
 
-  <!-- Seção Home -->
-  <section id="home">
-    <div class="container">
-      <h1>Bem-vindo ao Meu Site!</h1>
-      <p>Um site incrível criado com Bootstrap</p>
-    </div>
-  </section>
+      #meu-div:hover {
+        transform: rotate(90deg);
+      }
 
-  <!-- Seção Sobre -->
-  <section id="sobre">
-    <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>Texto sobre a empresa ou pessoa</p>
-    </div>
-  </section>
+      #meu-botao {
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: background-color 0.3s ease-in-out;
+      }
 
-  <!-- Seção Serviços -->
-  <section id="servicos">
-    <div class="container">
-      <h2>Serviços</h2>
-      <p>Lista de serviços oferecidos</p>
-    </div>
-  </section>
+      #meu-botao:hover {
+        background-color: red;
+      }
 
-  <!-- Seção Contato -->
-  <section id="contato">
-    <div class="container">
-      <h2>Contato</h2>
-      <p>Formulário de contato ou informações de contato</p>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <p>Meu Site &copy; 2023. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- Incluindo os arquivos JavaScript do Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
+      #meu-botao:active {
+        transform: scale(0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Meus efeitos legais</h1>
+    <p>Aqui estão alguns efeitos que eu criei:</p>
+    <div id="meu-div">Eu sou uma div</div>
+    <button id="meu-botao">Clique em mim!</button>
+  </body>
 </html>
