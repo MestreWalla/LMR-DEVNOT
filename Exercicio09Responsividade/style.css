@@ -27,7 +27,7 @@ header a:hover {color: rgb(164, 254, 159); font-size: 20px;}
 .parteDois img {width: 80vh; margin-top: 10px; box-shadow: 3px 4px 5px 0px black;}
 
 /* CRIADOR */
-.senai {display: flex; align-items: center; background-color: none; height: 20px;
+.senai {display: flex; align-items: center; height: 20px;
     background-color: rgb(26, 50, 101); border-radius: 15px;
     width: 45vh; box-shadow: 3px 4px 5px 0px black; display: none;}
 .criador h5 {margin-left: 20px; color:white; font-weight: bold;}
