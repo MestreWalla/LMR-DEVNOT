@@ -26,10 +26,10 @@
                             <a class="nav-link" aria-current="page" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contato.html">Contato</a>
+                            <a class="nav-link" href="contato.html">Contato</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Login/Cadastro
                             </a>
@@ -63,16 +63,54 @@
         <label for="inputPassword5" class="form-label">Password</label>
         <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
         <div id="passwordHelpBlock" class="form-text">
-            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces,
-            special characters, or emoji.
+            Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços, caracteres
+            especiais, ou emoji.
         </div>
     </div>
     <!-- BOTOES -->
-    <div class="position-absolute top-50 start-50 translate-middle">
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary"><a  class="link-body-emphasis link-offset-2 link-underline-opacity-10 link-underline-opacity-75-hover" href="login.html">Login</a></button>
-            <button type="button" class="btn btn-primary"><a  class="link-body-emphasis link-offset-2 link-underline-opacity-10 link-underline-opacity-75-hover" href="cadastro.html">Cadastro</a></button>
-            <button type="button" class="btn btn-danger"><a  class="link-body-emphasis link-offset-2 link-underline-opacity-10 link-underline-opacity-75-hover" href="#">Recuperar Senha</a></button>
+    <div class="position-relative mt-5">
+        <div class="row">
+            <div class="btn-group position-absolute top-50 start-50 translate-middle" role="group"
+                aria-label="Basic example">
+                <button type="button" class="btn btn-primary">
+                    <a class="link-body-emphasis link-offset-2 link-underline-opacity-10 link-underline-opacity-75-hover"
+                        href="login.html">Login</a></button>
+                <button type="button" class="btn btn-primary">
+                    <a class="link-body-emphasis link-offset-2 link-underline-opacity-10 link-underline-opacity-75-hover"
+                        href="cadastro.html">Cadastro</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- RECUPERAR SENHA -->
+    <div class="row">
+        <p>
+            <button type="button" class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Recuperar Senha
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                ...
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Enviaremos um e-mail com um link de
+                        recuperação de senha, caso nao encontre na caixa de entrada, por
+                        favor verificar na caixa de span.</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                    <div class="position-relative mt-5">
+                        <div class="btn-group position-absolute top-50 start-50 translate-middle" role="group"
+                            aria-label="Basic example">
+                            <button type="button" class="btn btn-primary"><a
+                                    class="link-body-emphasis link-offset-2 link-underline-opacity-10 link-underline-opacity-75-hover"
+                                    href="login.html">Enviar e-mail de recuperação</a></button>
+                            <button type="button" class="btn btn-success"><a
+                                    class="link-body-emphasis link-offset-2 link-underline-opacity-10 link-underline-opacity-75-hover"
+                                    href="login.html">Login</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- /BOTOES -->
