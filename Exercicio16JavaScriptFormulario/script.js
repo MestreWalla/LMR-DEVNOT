@@ -9,7 +9,6 @@ function completName() {
   alert("Welcome: " + firstName + " " + secondName + " " + lastName);
 }
 
-
 function result() {
   let firstNumber = document.getElementById("fNumber").value;
   let operator = document.getElementById("operator").value;
@@ -17,22 +16,24 @@ function result() {
 
   switch (operator) {
     case "+":
-        alert("RESULTADO: "+parseInt(firstNumber) + parseInt(secondNumber));
+      alert("RESULTADO: " + parseInt(firstNumber) + parseInt(secondNumber));
       break;
     case "-":
-        alert("RESULTADO: "+parseInt(firstNumber) - parseInt(secondNumber));
+      alert("RESULTADO: " + parseInt(firstNumber) - parseInt(secondNumber));
       break;
     case "*":
-        alert("RESULTADO: "+parseInt(firstNumber) * parseInt(secondNumber));
+      alert("RESULTADO: " + parseInt(firstNumber) * parseInt(secondNumber));
       break;
     case "/":
       if (secondNumber == 0) {
         alert("Invalid");
       } else {
-        alert("RESULTADO: "+parseFloat(firstNumber) / parseFloat(secondNumber));
+        alert(
+          "RESULTADO: " + parseFloat(firstNumber) / parseFloat(secondNumber)
+        );
       }
       break;
     default:
-        alert("Choose a valid operation");
+      alert("Choose a valid operation");
   }
 }
