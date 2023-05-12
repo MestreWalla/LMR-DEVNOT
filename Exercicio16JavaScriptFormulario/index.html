@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name</title>
+</head>
+
+<body>
+    <h3>Write your complete name in the boxes below.</h3>
+    <br>
+    <!-- First Name -->
+    <label for="fName"></label>
+    <input type="text" id="fName" placeholder="First name here">
+    <!-- Second Name -->
+    <label for="sName"></label>
+    <input type="text" id="sName" placeholder="Second name here">
+    <!-- Last Name -->
+    <label for="lName"></label>
+    <input type="text" id="lName" placeholder="Last name here">
+    <!-- Botão -->
+    <input type="button" value="Enviar" onclick="completName()">
+
+    <h3>Calculator</h3>
+    <br>
+    <!-- 1º Number -->
+    <label for="fNumber"></label>
+    <input type="text" id="fNumber" placeholder="1º Number">
+    <!-- Operator -->
+    <select name="Operator" id="operator">
+        <option value="">Select the operator</option>
+        <option value="*">Multiplication</option>
+        <option value="/">Division</option>
+        <option value="+">Addition</option>
+        <option value="-">Subtraction</option>
+    </select>
+    <!-- 2º Number -->
+    <label for="sNumber"></label>
+    <input type="text" id="sNumber" placeholder="2º Number">
+    <!-- Botão -->
+    <input type="button" value="Result" onclick="result()">
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
