@@ -2,14 +2,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 8px;
-    height: 30px;
-    width: 30px;
+    /* justify-content: space-between; */
+    /* padding: 5px; */
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
     background-color: blueviolet;
 }
 .subHamb {
-    height: 5%;
-    width: 70%;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 5px;
+    width: 30px;
     background-color: black;
 }
+/* .subHamb span:nth-child(1){} */
