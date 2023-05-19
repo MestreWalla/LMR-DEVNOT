@@ -11,6 +11,11 @@
   margin-right: 10px;
   color: white;
 }
+.corpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #fName,
 #sName,
 #lName,
@@ -18,25 +23,27 @@
   width: 25%;
 }
 .Cadastro {
+  margin: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: brown;
-  height: 90vh;
+  height: 60vh;
+  width: 50vh;
 }
 .Cadastro img {
-  width: 15%;
+  width: 35%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .Cadastro input {
-  width: 25%;
+  width: 75%;
   margin-top: 20px;
 }
 #eMail,
 #fPass,
 #sPass {
-  width: 25%;
+  width: 75%;
   margin-top: 15px;
 }
 .buttons {
