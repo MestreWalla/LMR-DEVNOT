@@ -1,0 +1,125 @@
+body {
+  background-color: rgb(167, 158, 140);
+  background-image: url(img/fundo02.jpg);
+  /* margin: 20px; */
+  background-size: 100vh;
+}
+/* HEADER */
+.header {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 0.834375) 0%,
+    rgba(148, 187, 233, 0.8117943548387097) 100%
+  );
+  backdrop-filter: blur(3px);
+  border-radius: 8px;
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+  position: absolute;
+  width: 700px;
+  top: 15px;
+  left: 15px;
+}
+.logo {
+  height: 50px;
+  padding: 5px;
+  margin-left: 10px;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+/* BODY */
+.categories {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(134, 149, 170);
+    border-radius: 25px;
+    padding: 5px;
+}
+.categories div {
+    background-color: pink;
+    border-radius: 20px;
+    margin: 5px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.categories div:hover {
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    cursor: pointer;
+    background-color: rgb(245, 147, 165);
+    color: white;
+}
+.icons {
+    height: 35px;
+}
+/* CONTENT */
+.content {
+    display: flex;
+    flex-direction: row;
+}
+.contentCards {
+    display: flex;
+    flex-direction: row;
+    /* width: 50%; */
+    margin: 1px;
+}
+.card {
+    background-color: pink;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    /* width: 200px; */
+    margin: 5px;
+}
+.contentCards div:hover {
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    cursor: pointer;
+    background-color: rgb(245, 147, 165);
+    color: white;
+}
+.card img{
+    height: 200px;
+    border-radius: 5px;
+}
+/*FOOTER*/
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: none;
+  height: 20px;
+  background-color: rgb(26, 50, 101);
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+.criador h5 {
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+}
+/* MEDIA */
+@media screen and (max-width: 998px){
+    .content {display: flex; flex-direction:column;}
+}
