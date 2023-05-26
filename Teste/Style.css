@@ -1,11 +1,11 @@
 body {
-  background-color:black;
+  background-color: black;
 }
 header {
   padding: 5px;
   background-color: AliceBlue;
   height: 50px;
-  Width: 50vh;
+  width: 50vh;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -28,11 +28,9 @@ header img {
   color: black;
 }
 
-
-
 #checkbox2 {
   all: unset;
-  display:none;
+  display: none;
 }
 .checkbox2-label {
   height: 5px;
@@ -40,19 +38,16 @@ header img {
   cursor: pointer;
 }
 .checkbox2-label::before {
-  content: '';
+  content: "";
   display: block;
   height: 20px;
   width: 50vh;
   background-color: gray;
-  transition:.8s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 #checkbox2:checked + .checkbox2-label::before {
   height: 200px;
-} 
-
-
-
+}
 
 .sub {
   height: 10px;
@@ -63,14 +58,9 @@ header img {
 .sub a {
   text-decoration: none;
 }
-
-
-
-
-
 #checkbox {
   all: unset;
-  display:none;
+  display: none;
 }
 #checkbox:checked + .checkbox-label::before {
   /*background-color: #07bdac; azul*/
@@ -86,16 +76,16 @@ header img {
   color: #ffffff;
 }
 .checkbox-label::before {
-  content: '';
+  content: "";
   display: block;
   height: 50px;
   width: 50px;
   box-sizing: border-box;
   /*border: 2px solid white;*/
   border-radius: 4px;
-  background-image: url("img/hamburger.png"); 
+  background-image: url("img/hamburger.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40px;
-  transition:.8s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
