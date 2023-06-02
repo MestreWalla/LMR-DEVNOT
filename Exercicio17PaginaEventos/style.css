@@ -1,33 +1,36 @@
 body {
   background-color: rgb(96, 105, 134);
-  background-image: url(img/fundo02.jpg);
+  background-image: url(img/backgroundtest.jpg);
   background-size: 100vh;
 }
 
 /* <TESTE> */
 
-.toggle-menu:checked + .header .menu-links {
+.toggle-menu:checked+.header .menu-links {
   display: block;
 }
 
-.toggle-menu:checked + .header .hamburger:before {
+.toggle-menu:checked+.header .hamburger:before {
   transform: rotate(45deg);
   top: 0;
 }
 
-.toggle-menu:checked + .header .hamburger:after {
+.toggle-menu:checked+.header .hamburger:after {
   transform: rotate(-45deg);
   bottom: 0;
 }
+
 #checkbox {
   all: unset;
   display: none;
 }
-#checkbox:checked + .checkbox-label::before {
+
+#checkbox:checked+.checkbox-label::before {
   /*background-color: #07bdac; azul*/
   background-image: url("Img/hamburger02.png");
   background-size: 30px;
 }
+
 .checkbox-label {
   display: flex;
   align-items: center;
@@ -36,13 +39,13 @@ body {
   cursor: pointer;
   color: #ffffff;
 }
+
 .checkbox-label::before {
   content: "";
   display: block;
   height: 50px;
   width: 50px;
   box-sizing: border-box;
-  /*border: 2px solid white;*/
   border-radius: 4px;
   background-image: url("Img/hamburger.png");
   background-repeat: no-repeat;
@@ -101,7 +104,7 @@ body {
 .hamburger {
   display: none;
 }
-
+/* <CATEGORIAS> */
 .categories {
   margin-top: 90px;
   display: flex;
@@ -115,6 +118,7 @@ body {
 
 .categories div {
   background-color: 1, 107, 177;
+  color: black;
   box-shadow: none;
   border-radius: 20px;
   margin: 5px;
@@ -124,8 +128,8 @@ body {
   justify-content: space-between;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: none;
-  transition: background-color 300ms linear, box-shadow 300ms linear;
+  transition: background-color 300ms linear, box-shadow 300ms linear, transform 300ms linear,
+    color 300ms linear;
 }
 
 .categories div:hover {
@@ -133,16 +137,18 @@ body {
   cursor: pointer;
   background-color: rgb(40, 149, 192);
   color: white;
+  transform: scale(1.2);
 }
 
 .icons {
   height: 35px;
 }
-
+/* </CATEGORIAS> */
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 .contentCards {
@@ -153,27 +159,25 @@ body {
 
 .card {
   background-color: rgb(134, 149, 170);
+  width: 25%;
   padding: 5px;
   border-radius: 10px;
   text-align: center;
   margin: 5px;
+  transition: transform 300ms linear;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: rgba(134, 149, 170, 0.507);
+  backdrop-filter: blur(3px);
 }
 
 .cardText {
   background-color: white;
   background-image: none;
-
   height: 350px;
-  transition: height 300ms linear;
-}
-.cardText:hover {
-  height: 500px;
-  position: absolute;
-  top: 100px;
-  left: 30px;
-  right: 30px;
-  bottom: 30px;
-  transition: height 300ms linear;
+  transition: transform 300ms linear;
 }
 
 .contentCards div {
@@ -220,6 +224,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+
   /* <TESTE> */
   /* Esconder os links do menu */
   .header .menu-links {
@@ -235,6 +240,7 @@ body {
   .mobile-menu {
     display: none;
   }
+
   /* </TESTE> */
   .categories {
     border-radius: 25px 25px 12px 12px;
@@ -290,6 +296,23 @@ body {
   padding: 20px;
   border-radius: 20px;
   text-align: center;
+  transition: background-color 300ms linear;
+}
+
+.about:hover {
+  background-color: rgb(162, 174, 190);
+}
+
+.about img {
+  position: relative;
+  width: 40%;
+  border-radius: 200px;
+  transition: transform 300ms linear, border-radius 300ms linear;
+}
+
+.about img:hover {
+  border-radius: 20px;
+  transform: scale(1.2);
 }
 
 .inf {
@@ -302,6 +325,11 @@ body {
 .form2 {
   background-color: rgb(170, 180, 189);
   border-radius: 6px;
+  transition: background-color 300ms linear;
+}
+
+.form2:hover {
+  background-color: white;
 }
 
 .botoes {
