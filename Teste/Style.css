@@ -63,7 +63,7 @@ header img {
 }
 #checkbox:checked + .checkbox-label::before {
   /*background-color: #07bdac; azul*/
-  background-image: url("img/hamburger02.png");
+  background-image: url("Img/hamburger02.png");
   background-size: 30px;
 }
 .checkbox-label {
@@ -82,7 +82,7 @@ header img {
   box-sizing: border-box;
   /*border: 2px solid white;*/
   border-radius: 4px;
-  background-image: url("img/hamburger.png");
+  background-image: url("Img/hamburger.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40px;
