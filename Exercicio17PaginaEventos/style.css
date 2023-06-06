@@ -126,7 +126,7 @@ body {
   border-radius: 10px;
   text-align: center;
   margin: 5px;
-  transition: transform 300ms linear;
+  transition: transform 300ms linear background-color 300ms linear;
 }
 
 .card:hover {
