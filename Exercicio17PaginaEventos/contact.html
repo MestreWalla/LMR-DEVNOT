@@ -10,17 +10,24 @@
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <img src="img/logo.png" alt="" class="logo">
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
-        <img src="img/hamburger.png" alt="menu" class="hamburger">
-    </div>
-    <div class="content">
+        <a href="index.html" class="link">Home</a>
+        <a href="gallery.html" class="link">Gallery</a>
+        <a href="events.html" class="link">Events</a>
+        <a href="about.html" class="link">About</a>
+        <a href="contact.html" class="link">Contact</a>
+        <label for="menu-toggle" class="menu-toggle"></label>
+        <input type="checkbox" id="menu-toggle" class="checkbox" />
+        <div class="mobile">
+            <a href="index.html" class="linkMobile">Home</a>
+            <a href="gallery.html" class="linkMobile">Gallery</a>
+            <a href="events.html" class="linkMobile">Events</a>
+            <a href="about.html" class="linkMobile">About</a>
+            <a href="contact.html" class="linkMobile">Contact</a>
+        </div>
+    </header>
+    <div class="contentForm">
         <div class="about">
             <h1>
                 Meridiana Eventos
@@ -44,12 +51,11 @@
                             <label for="lmail" title="Mail"></Label>
                             <input type="text" name="e-mail" id="lmail" class="form2" placeholder="E-mail" />
                         </div>
-
+                        <!--campo para escrever-->
+                        <textarea name="Observações" id="" cols="60" rows="10" class="form2"
+                            placeholder="Escreva suas observações"></textarea>
                         <br>
-                        <textarea name="Observações" id="" cols="40" rows="5" class="form2"
-                            placeholder="Escreva suas observações"></textarea> <!--campo para escrever-->
-                        <br>
-                        <input type="Reset" value="Limpar Dados" class="botoes">
+                        <input type="Reset" value="Cancelar" class="botoes">
                         <!--Botão Enviar-->
                         <input type="submit" value="Enviar" class="botoes">
                         <br><br>
