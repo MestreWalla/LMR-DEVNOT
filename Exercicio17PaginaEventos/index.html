@@ -7,11 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
     <title>Pagina Eventos</title>
 </head>
 
@@ -19,25 +14,22 @@
     <!-- <MENU> -->
     <header class="header">
         <img src="img/logo.png" alt="" class="logo">
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img src="img/hamburger.png" alt="" class="hamburger">
-            </button>
-            <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button">Home</button></li>
-                <li><button class="dropdown-item" type="button">Gallery</button></li>
-                <li><button class="dropdown-item" type="button">Events</button></li>
-                <li><button class="dropdown-item" type="button">About</button></li>
-                <li><button class="dropdown-item" type="button">Contact</button></li>
-            </ul>
+        <a href="index.html" class="link">Home</a>
+        <a href="gallery.html" class="link">Gallery</a>
+        <a href="events.html" class="link">Events</a>
+        <a href="about.html" class="link">About</a>
+        <a href="contact.html" class="link">Contact</a>
+        <label for="menu-toggle" class="menu-toggle"></label>
+        <input type="checkbox" id="menu-toggle" class="checkbox" />
+        <div class="mobile">
+            <a href="index.html" class="linkMobile">Home</a>
+            <a href="gallery.html" class="linkMobile">Gallery</a>
+            <a href="events.html" class="linkMobile">Events</a>
+            <a href="about.html" class="linkMobile">About</a>
+            <a href="contact.html" class="linkMobile">Contact</a>
         </div>
     </header>
+
     <!-- </MENU> -->
     <!-- <CATEGORIAS> -->
     <div class="categories">
