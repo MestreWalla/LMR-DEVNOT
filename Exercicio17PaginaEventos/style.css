@@ -264,11 +264,9 @@ body {
     display: flex;
     flex-direction: column;
   }
-
   .header {
     width: 85%;
   }
-
   .link {
     display: none;
   }
