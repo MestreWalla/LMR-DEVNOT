@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>About</title>
 </head>
 
@@ -13,16 +14,16 @@
     <header class="header">
         <img src="img/logo.png" alt="" class="logo">
         <a href="index.html" class="link">Home</a>
-        <a href="gallery.html" class="link">Gallery</a>
-        <a href="events.html" class="link">Events</a>
+        <a href="galeria.html" class="link">Galeria</a>
+        <a href="cadastro.html" class="link">Cadastro</a>
         <a href="about.html" class="link">About</a>
         <a href="contact.html" class="link">Contact</a>
         <label for="menu-toggle" class="menu-toggle"></label>
         <input type="checkbox" id="menu-toggle" class="checkbox" />
         <div class="mobile">
             <a href="index.html" class="linkMobile">Home</a>
-            <a href="gallery.html" class="linkMobile">Gallery</a>
-            <a href="events.html" class="linkMobile">Events</a>
+            <a href="galeria.html" class="linkMobile">Galeria</a>
+            <a href="cadastro.html" class="linkMobile">Cadastro</a>
             <a href="about.html" class="linkMobile">About</a>
             <a href="contact.html" class="linkMobile">Contact</a>
         </div>
@@ -44,20 +45,21 @@
                     <form action="">
                         <div class="inf">
                             <!--Nome Completo-->
-                            <label for="cname" title="Mail"></Label>
-                            <input type="text" name="nome" id="name" class="form2" placeholder="Nome Completo" />
-                            <br><br>
-                            <!--Email-->
-                            <label for="lmail" title="Mail"></Label>
-                            <input type="text" name="e-mail" id="lmail" class="form2" placeholder="E-mail" />
+                            <label for="pNome" title="Nome"></Label>
+                            <input type="text" name="nome" id="pNome" class="form2" placeholder="Primeiro nome" />
+                            <label for="sNome" title="Sobrenome"></Label>
+                            <input type="text" name="nome" id="sNome" class="form2" placeholder="Sobrenome" />
+
                         </div>
+                        <!--Email-->
+                        <label for="eMail" title="Mail"></Label>
+                        <input type="text" name="e-mail" id="eMail" class="form2" placeholder="E-mail" />
                         <!--campo para escrever-->
-                        <textarea name="Observações" id="" cols="60" rows="10" class="form2"
+                        <textarea name="Observações" id="" cols="" rows="8" class="form3"
                             placeholder="Escreva suas observações"></textarea>
                         <br>
                         <input type="Reset" value="Cancelar" class="botoes">
-                        <!--Botão Enviar-->
-                        <input type="submit" value="Enviar" class="botoes">
+                        <input type="submit" value="Enviar" class="botoes" onclick="contato()">
                         <br><br>
                 </th>
         </div>
@@ -69,6 +71,7 @@
             <h5>Maycon Vitor Correa</h5>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
