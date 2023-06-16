@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(141, 136, 126);
+    background-image: url(img/fundo02.jpg);
+    margin: 20px;
+    background-size: 100vh;
+}
+/* MENU FLUTUANTE */
+.header{
+    background-color: rgba(255, 255, 255, 0.671);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    border-style: groove;
+}
+.menu {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    height: 50px;
+    padding: 5px;
+    margin-left: 10px;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.nav a {
+    color: black;
+    margin-right: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+/* CORPO INDEX */
+.index {
+    margin: 20px;
+    display: flex;
+    justify-content: column;
+}
+.bemVindo {
+    height: 76vh;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.671);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+}
+.bemVindo p {
+    padding: 20px;
+    text-align: left;
+}
+.fotoIndex img{
+    height: 76vh;
+    border-radius: 20px;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+}
+.senai {
+    display: flex;
+    align-items: center;
+    background-color: none;
+    height: 20px;
+    background-color: rgb(26, 50, 101);
+    border-radius: 15px;
+    width: 40vh;
+}
+.criador h5 {
+    margin-left: 20px;
+    color:white;
+    font-weight: bold;
+
+}

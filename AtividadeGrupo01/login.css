@@ -1,0 +1,16 @@
+.loginCadastro {
+    background-color: rgba(255, 255, 255, 0.804);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    margin-top: 25px;
+    height: 70vh;
+    margin-left: 50vh;
+    margin-right: 50vh;
+    align-items: center;
+}
+.login {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
