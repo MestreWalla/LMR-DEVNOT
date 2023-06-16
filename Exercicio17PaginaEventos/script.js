@@ -12,6 +12,7 @@ function cadastro() {
     let email2 = document.getElementById("email2").value;
     let senha1 = document.getElementById("senha1").value;
     let senha2 = document.getElementById("senha2").value;
+    let termos = document.getElementById("termos").checked;
     let nascimento = document.getElementById("nascimento").value;
     if (senha1 == "" || senha2 == "" || email1 == "" || email2 == "" || nome == "" || nascimento == "") {
         alert("Preencha todos os campos");
@@ -19,7 +20,9 @@ function cadastro() {
         alert("As senhas não conferem");
     } else if (email1 != email2) {
         alert("Os e-mails não conferem");
-    } else {
+    } else if (termos != true) {
+        alert("Aceite os termos");
+    } } else {
         alert("Casdastro realizado com sucesso");
     }
 }
