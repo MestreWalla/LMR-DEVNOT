@@ -22,7 +22,7 @@ function cadastro() {
         alert("Os e-mails não conferem");
     } else if (termos != true) {
         alert("Aceite os termos");
-    } } else {
+    }  else {
         alert("Casdastro realizado com sucesso");
     }
 }
