@@ -1,0 +1,1 @@
+document.write('clique nos numeros para navegar nas imagens.');
