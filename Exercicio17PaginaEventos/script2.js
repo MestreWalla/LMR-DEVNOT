@@ -1,1 +1,1 @@
-document.write('clique nos numeros para navegar nas imagens.');
+document.write('clique nos numeros para navegar entre as imagens.');
