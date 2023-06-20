@@ -1,7 +1,7 @@
 body {
   background-color: rgb(96, 105, 134);
   background-image: url(img/backgroundtest.jpg);
-  background-size: 100vh no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,8 +196,8 @@ body {
 }
 
 .cardText {
-  background-color: white;
-  background-image: none;
+  /* background-color: white; */
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
   height: 350px;
   transition: transform 300ms linear;
 }
@@ -213,6 +213,17 @@ body {
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
   cursor: pointer;
 }
+
+#zoom-trigger01:not(:checked) + .cardText {
+  transform: scale(1);
+  
+}
+
+#zoom-trigger01:checked + .cardText {
+  transform: scale(5);
+  position:fixed;
+}
+
 
 .card img {
   width: 200px;
