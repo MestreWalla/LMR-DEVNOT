@@ -117,7 +117,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 190%;
-  transition: background-color 0.3s linear;
+  transition: height 0.3s linear;
 }
 
 /* </MOBILEMENU> */
