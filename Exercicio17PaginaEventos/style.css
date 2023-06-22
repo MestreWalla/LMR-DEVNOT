@@ -116,7 +116,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90%;
+  height: 190%;
   transition: background-color 0.3s linear;
 }
 
