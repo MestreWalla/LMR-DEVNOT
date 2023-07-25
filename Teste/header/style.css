@@ -113,7 +113,7 @@ body {
     height: 50%;
     width: auto;
     flex-direction: column;
-    border-radius: 50% 50% 10px 10px;
+    border-radius: 10% 10% 10px 10px;
     transition: border-radius 100ms linear, height 300ms linear;
   }
 
