@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <a href="#header" class="subir"><img src="img/seta.png" alt="" /></a>
+    <header id="header">
+      <img src="img/logo.webp" alt="" />
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produto</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="login.html">Login</a>
+      <a href="#">Contato</a>
+      <img src="img/hamburger.png" alt="" />
+    </header>
+    <div class="login">
+      <div class="loginContent">
+        <img src="img/perfil.png" alt="" />
+        <form action="">
+          <!--Inicio do formulario-->
+          <div class="cadastro">
+            <label for="nome"></label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="botoes"
+              placeholder="Primeiro nome"
+              required="required"
+            />
+            <label for="sobrenome"></label>
+            <input
+              type="text"
+              name="sobrenome"
+              id="sobrenome"
+              class="botoes"
+              placeholder="Sobrenome"
+              required="required"
+            />
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email1"
+              class="botoes"
+              placeholder="email"
+              required="required"
+              pattern="^[0-9a-zA-Z-._+]+@[a-zA-Z0-9-_+]+\.[a-zA-Z]+(\.[a-zA-Z]+)?"
+            />
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email2"
+              class="botoes"
+              placeholder="Confirme o email"
+              required="required"
+              pattern="^[0-9a-zA-Z-._+]+@[a-zA-Z0-9-_+]+\.[a-zA-Z]+(\.[a-zA-Z]+)?"
+            />
+            <label for="senha"></label>
+            <input
+              type="password"
+              name="senha"
+              id="senha1"
+              class="botoes"
+              placeholder="Senha"
+              required="required"
+              pattern="^[0-9a-zA-Z-._+]+@[a-zA-Z0-9-_+]+\.[a-zA-Z]+(\.[a-zA-Z]+)?"
+            />
+            <input
+              type="password"
+              name="senha"
+              id="senha2"
+              class="botoes"
+              placeholder="Confirme a Senha"
+              required="required"
+              pattern="^[0-9a-zA-Z-._+]+@[a-zA-Z0-9-_+]+\.[a-zA-Z]+(\.[a-zA-Z]+)?"
+            />
+            <label for="genero"></label>
+            <select
+              name="Genero"
+              class="botoes"
+              id="curso"
+              placeholder="Gênero"
+            >
+              <option value="" disabledfirst>Genero</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outros">Outros</option>
+            </select>
+            <label for="nascimento"></label>
+            <input
+              type="date"
+              name="Data de nascimento"
+              id="nascimento"
+              class="botoes"
+              value="Nascimento"
+            />
+          </div>
+          <label for="termos"></label>
+          <!-- <input type="radio" name="termos" id="termos" value="90" checked> -->
+          <div class="botoes">
+            <input
+              type="checkbox"
+              name="termos"
+              id="termos"
+              value="aceitar"
+            />Aceito os termos de uso dos meus dados.
+          </div>
+          <div class="botoes">
+            <input type="Reset" value="Cancelar" class="botoes" />
+            <input
+              type="submit"
+              value="Enviar"
+              class="botoes"
+              onclick="cadastro()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+      <img src="img/senailogo.png" alt="Logo" class="senaiLogo" height="20px" />
+      <div class="criador">
+        <h5>Maycon Vitor Correa</h5>
+      </div>
+    </div>
+  </body>
+</html>

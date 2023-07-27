@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <a href="#header" class="subir"><img src="img/seta.png" alt="" /></a>
+    <header id="header">
+      <img src="img/logo.webp" alt="" />
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produto</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="login.html">Login</a>
+      <a href="#">Contato</a>
+      <img src="img/hamburger.png" alt="" />
+    </header>
+    <div class="login">
+      <div class="loginContent">
+        <img src="img/perfil.png" alt="" />
+        <form action="">
+          <!--Inicio do formulario-->
+          <!--Email-->
+          <input
+            type="text"
+            placeholder="E-mail"
+            style="text-align: center"
+            class="caixa"
+          />
+          <!--Senha-->
+          <input
+            type="password"
+            placeholder="Senha"
+            style="text-align: center"
+            class="caixa"
+          />
+          <div class="lembrar">
+            <input type="checkbox" id="lembrar_senha" name="lembrar_senha" />
+            <label for="lembrar_senha">Lembrar</label>
+          </div>
+          <a href="#">Esqueci a senha</a>
+          <div class="botoesDiv">
+            <!--Botão Enviar-->
+            <input type="submit" value="Logar" class="botoes" />
+            <!--Botão Cadastro-->
+            <a href="#"
+              ><input type="button" value="Cadastro" class="botoes"
+            /></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
