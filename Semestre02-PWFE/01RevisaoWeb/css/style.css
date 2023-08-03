@@ -6,9 +6,11 @@
   --quinary-color: green;
   --senary-color: green;
 }
+
 body {
   margin: 0px;
 }
+
 header {
   background-color: var(--primary-color);
   height: 50px;
@@ -18,9 +20,11 @@ header {
   padding: 0px 10px;
   box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.38);
 }
+
 header img {
   height: 30px;
 }
+
 header img:last-child {
   display: none;
 }
@@ -31,6 +35,7 @@ header a {
   font-size: 20px;
   font-weight: bold;
 }
+
 .subir {
   background-color: var(--primary-color);
   height: 40px;
@@ -41,6 +46,7 @@ header a {
   right: 10px;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.38);
 }
+
 .subir img {
   height: 40px;
   display: flex;
@@ -48,46 +54,9 @@ header a {
   justify-content: center;
   transform: rotate(-90deg);
 }
+
 .subir:hover {
   transform: scale(1.2);
-}
-.carrossel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.slider {
-  overflow: hidden;
-}
-.slider > .slider-content {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  transition: all 500ms ease;
-}
-
-.slider > .slider-content > .slider-item {
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-.slider > input:nth-child(1):checked ~ .slider-content {
-  transform: translateX(0%);
-}
-
-.slider > input:nth-child(2):checked ~ .slider-content {
-  transform: translateX(-100%);
-}
-.slider > input:nth-child(3):checked ~ .slider-content {
-  transform: translateX(-200%);
-}
-
-.slider > input:nth-child(4):checked ~ .slider-content {
-  transform: translateX(-300%);
-}
-.slider-content img {
-  height: 200px;
 }
 
 /* PRODUTO */
@@ -100,6 +69,7 @@ header a {
   margin: 10px;
   border-radius: 5px;
 }
+
 .card {
   margin: 10px;
   border-radius: 5px;
@@ -111,10 +81,12 @@ header a {
   justify-content: center;
   background-color: var(--primary-color);
 }
+
 .card img {
   height: 50%;
   border-radius: 5px;
 }
+
 .nomeProd {
   color: var(--tertiary-color);
   font-weight: bold;
@@ -124,6 +96,7 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .preco {
   color: var(--quaternary-color);
   font-weight: bold;
@@ -133,12 +106,14 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 /* LOGIN */
 .login {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
+
 .loginContent {
   display: flex;
   flex-direction: row;
@@ -149,36 +124,44 @@ header a {
   border-radius: 5px;
   padding: 10px;
 }
+
 .login img {
   max-width: 250px;
   margin: 10px;
   border-radius: 50%;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.38);
 }
+
 .login form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .caixa {
   margin: 10px 0px 0px 0px;
 }
+
 .lembrar {
   margin-top: 5px;
 }
+
 .login a {
   margin-top: 5px;
 }
+
 .botoes {
   margin: 5px;
 }
+
 .cadastro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .footer {
   display: flex;
   align-items: center;
@@ -196,13 +179,78 @@ header a {
   font-weight: bold;
 }
 
+/* Carrossel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide[data-label]:checked {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.controls label {
+  cursor: pointer;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+/* Estilos dos botões Anterior e Próximo */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#anterior {
+  left: 20px;
+}
+
+#proximo {
+  right: 20px;
+}
+
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   header img:last-child {
     display: block;
   }
+
   header a {
     display: none;
   }
+
   .loginContent {
     flex-direction: column;
     width: 70%;

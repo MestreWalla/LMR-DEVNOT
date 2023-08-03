@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Inicio</title>
-  </head>
-  <body>
-    <a href="#header" class="subir"><img src="img/seta.png" alt="" /></a>
-    <header id="header">
-      <img src="img/logo.webp" alt="" />
-      <a href="index.html">Início</a>
-      <a href="produtos.html">Produto</a>
-      <a href="cadastro.html">Cadastro</a>
-      <a href="login.html">Login</a>
-      <a href="#">Contato</a>
-      <img src="img/hamburger.png" alt="" />
-    </header>
-    <div class="carrossel">
-      <section class="slider">
-        <input name="slide" type="radio" />
-        <input name="slide" type="radio" checked />
-        <input name="slide" type="radio" />
-        <input name="slide" type="radio" />
 
-        <div class="slider-content">
-          <div class="slider-item"><img src="img/imagem01.jpg" alt="" /></div>
-          <div class="slider-item"><img src="img/imagem02.jpg" alt="" /></div>
-          <div class="slider-item"><img src="img/imagem03.jpg" alt="" /></div>
-          <div class="slider-item"><img src="img/imagem04.jpg" alt="" /></div>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Inicio</title>
+</head>
+
+<body>
+  <a href="#header" class="subir"><img src="img/seta.png" alt="" /></a>
+  <header id="header">
+    <img src="img/logo.webp" alt="" />
+    <a href="index.html">Início</a>
+    <a href="produtos.html">Produto</a>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="login.html">Login</a>
+    <a href="#">Contato</a>
+    <img src="img/hamburger.png" alt="" />
+  </header>
+
+  <!-- Carrossel -->
+  <div class="carousel">
+    <input type="radio" name="slide" id="slide1" checked />
+    <input type="radio" name="slide" id="slide2" />
+    <input type="radio" name="slide" id="slide3" />
+
+    <div class="slide" data-label="slide1">
+      <img src="img/imagem01.jpg" alt="Slide 1" />
     </div>
-  </body>
+    <div class="slide" data-label="slide2">
+      <img src="img/imagem02.jpg" alt="Slide 2" />
+    </div>
+    <div class="slide" data-label="slide3">
+      <img src="img/imagem03.jpg" alt="Slide 3" />
+    </div>
+
+    <div class="controls">
+      <label for="slide1">&#9679;</label>
+      <label for="slide2">&#9679;</label>
+      <label for="slide3">&#9679;</label>
+    </div>
+  </div>
+
+  <!-- Botões Anterior e Próximo -->
+  <button id="anterior">&#10094;</button>
+  <button id="proximo">&#10095;</button>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <img src="img/senailogo.png" alt="Logo" class="senaiLogo" height="20px" />
+    <div class="criador">
+      <h5>Maycon Vitor Correa</h5>
+    </div>
+  </div>
+</body>
+
 </html>
