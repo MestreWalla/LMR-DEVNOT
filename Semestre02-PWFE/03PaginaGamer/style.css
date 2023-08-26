@@ -1,0 +1,90 @@
+:root {
+    --header: linear-gradient(180deg, #6D6BE1 0%, #5E878A 85.42%);
+    --cor01: #dcebeb;
+    --cor02: #dcebeb;
+    --cor03: #f7e2e1;
+    --cor04: #eca4a4;
+    --cor05: #ac6869;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* <HEADER> */
+header {
+    height: 50px;
+    padding: 0px 10px;
+    background: var(--header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+
+    &&:hover {
+        color: black;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+    }
+}
+
+/* </HEADER> */
+/* <CARROSSEL> */
+.carroussel {
+    margin-top: 5px;
+}
+
+.gallery {
+    background: #000000;
+}
+
+.gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: rgb(19, 88, 19);
+    counter-increment: gallery-cell;
+}
+
+.carroussel img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+} */
+
+/* </CARROSSEL> */
+/* <BANNER> */
+.banner {
+    margin-top: 5px;
+}
+
+.banner img {
+    width: 100%;
+}
