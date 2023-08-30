@@ -1,5 +1,6 @@
 :root {
     --header: linear-gradient(180deg, #6D6BE1 0%, #5E878A 85.42%);
+    --headerLetras: black;
     --cor01: #dcebeb;
     --cor02: #dcebeb;
     --cor03: #f7e2e1;
@@ -31,10 +32,8 @@ header a {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    color: black;
-
+    color: var(--headerLetras);
     &&:hover {
-        color: black;
         text-shadow:
             0 0 7px #fff,
             0 0 10px #fff,
@@ -48,13 +47,14 @@ header a {
 }
 
 /* </HEADER> */
+
 /* <CARROSSEL> */
 .carroussel {
     margin-top: 5px;
 }
 
 .gallery {
-    background: #000000;
+    background: black;
 }
 
 .gallery-cell {
@@ -80,11 +80,39 @@ header a {
 } */
 
 /* </CARROSSEL> */
-/* <BANNER> */
+
 .banner {
     margin-top: 5px;
 }
 
 .banner img {
     width: 100%;
+}
+/* <BANNER> */
+/* Filtro */
+.produtos {
+    width: 100%;
+    height: 100%;
+    background-color: #eca4a4;
+    display: flex;
+}
+.filtro {
+    background-color: #5E878A;
+    width: 200px;
+    height: 100%;
+}
+.filtro img {
+    height: 200px;
+}
+.filtro li {
+    list-style: none;
+    text-transform: uppercase;
+    color: var(--headerLetras);
+}&&ul:first-child{
+    font-weight: bold;
+}
+.conteudosA {
+    background-color: #405352;
+    width: 100%;
+    height: 100%;
 }
