@@ -116,3 +116,31 @@ header a {
     width: 100%;
     height: 100%;
 }
+.pesquisar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.pesquisar input {
+    background-color: #a3c3c3;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size:medium;
+    font-weight: bold;
+}
+.pesquisar img {
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.conteudosB {
+    width: 100%;
+}
+.card {
+    background-color: #0fa;
+    width: 50px;
+    height: 100px;
+}
