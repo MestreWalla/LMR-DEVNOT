@@ -140,7 +140,21 @@ header a {
     width: 100%;
 }
 .card {
-    background-color: #0fa;
-    width: 50px;
-    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 10px;
+}
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produto img {
+    height: 170px;
+    border-radius: 10px;
+}
+.produto p {
+    font-weight: bold;
 }
