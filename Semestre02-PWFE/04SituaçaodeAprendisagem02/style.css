@@ -58,8 +58,8 @@
 
 .caixa {
     background-color: rgb(192, 192, 192);
-    height: 100px;
-    width: 70px;
+    height: 200px;
+    width: 140px;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -70,8 +70,8 @@
 }
 
 .caixa button {
-    width: 30px;
-    height: 50px;
+    width: 60px;
+    height: 100px;
     border-color: rgb(216, 219, 156);
     border-radius: 3px;
     background-color: rgb(248, 232, 174);
@@ -93,12 +93,36 @@
     gap: 30px;
 }
 .player01, .player02 {
-    background-color: blueviolet;
-    height: 300px;
-    width: 300px;
+    background-color: rgba(255, 255, 255, 0.577);
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.player01 img, .player02 img {
+    width: 350px;
+}
+.player01 img:nth-child(2) {
+    display: none;
+}
+.player01 img:nth-child(3) {
+    display: none;
+}
+.player02 img:nth-child(2) {
+    display: none;
+}
+.player02 img:nth-child(3) {
+    display: none;
 }
 .x p {
     font-weight: bold;
     text-transform: uppercase;
     font-size:80px;
+}
+.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
