@@ -19,7 +19,7 @@
 
 .linha1, .linha2, .linha3 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
     height: 33%;
     width: 33%;
 }
