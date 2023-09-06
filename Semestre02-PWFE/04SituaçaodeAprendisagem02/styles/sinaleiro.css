@@ -4,7 +4,7 @@
     width: 60px;
     border-radius: 75px;
     position: fixed;
-    z-index: 5;
+    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: space-between;
