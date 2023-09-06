@@ -16,3 +16,13 @@
     } & .amarelo {background-color: yellow;
     } & .verde {background-color: green;}
 }
+
+.linha1, .linha2, .linha3 {
+    height: 33%;
+    width: 33%;
+}
+.bairro1A {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}
