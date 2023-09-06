@@ -2,9 +2,20 @@
     margin: 0;
     padding: 0;
 }
+.telacheia {
+    position: fixed;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: green;
+    color: greenyellow;
+}
 
 .jankenpon,
-.jogoVelha,
+.semaforo,
 .calculadora {
     background-color: brown;
     height: 100vh;
@@ -114,31 +125,8 @@
     justify-content: center;
     & img {
         width: 350px;
+        display: none;
     }
-}
-
-.player01 img:nth-child(1) {
-    display: block;
-}
-
-.player01 img:nth-child(2) {
-    display: none;
-}
-
-.player01 img:nth-child(3) {
-    display: none;
-}
-
-.player02 img:nth-child(1) {
-    display: block;
-}
-
-.player02 img:nth-child(2) {
-    display: none;
-}
-
-.player02 img:nth-child(3) {
-    display: none;
 }
 
 .x p {
@@ -195,4 +183,23 @@
 }
 .pontuacao div {
     display: flex;
+}
+/* SINALEIRO */
+.sinal {
+    background-color: black;
+    height: 400px;
+    width: 150px;
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    & .vermelho, .amarelo, .verde {
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+        border-radius: 50px;
+    } & .vermelho {background-color: red;
+    } & .amarelo {background-color: yellow;
+    } & .verde {background-color: green;}
 }

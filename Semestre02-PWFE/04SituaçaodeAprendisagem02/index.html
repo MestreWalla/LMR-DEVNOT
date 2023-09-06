@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="javascript/luminaria.js"></script>
+    <script src="javascript/jankenpon.js"></script>
+    <script src="javascript/fullscreen.js"></script>
     <title>Games</title>
 </head>
 
@@ -13,6 +15,7 @@
     <header>
 
     </header>
+    <button type="submit" id="botaotelacheia" class="telacheia">FULLSCREEN</button>
     <div class="lampada" id="lampada">
         <div class="bulbo"></div>
         <div class="luz" id="luz">
@@ -24,41 +27,48 @@
             </div>
         </div>
     </div>
+    <!-- JANKENPON -->
     <div class="jankenpon">
         <div class="texto">
             <p>JANKENPON</p>
         </div>
         <div class="game">
             <div class="player01">
-                <img src="img/papel.png" alt="" class="papel">
-                <img src="" alt="" class="tesoura">
-                <img src="" alt="" class="pedra">
+                <img src="img/pedra.png" alt="Imagem 1" class="papel" id="pedraimg">
+                <img src="img/papel.png" alt="Imagem 2" class="tesoura" id="papelimg">
+                <img src="img/tesoura.png" alt="Imagem 3" class="pedra" id="tesouraimg">
             </div>
             <div class="x"><p>X</p></div>
             <div class="player02">
-                <img src="img/pedra.png" alt="" class="papel">
-                <img src="" alt="" class="tesoura">
-                <img src="" alt="" class="pedra">
+                <img src="img/pedra.png" alt="" class="papel" id="pedraimg2">
+                <img src="img/papel.png" alt="" class="tesoura" id="papelimg2">
+                <img src="img/tesoura.png" alt="" class="pedra" id="tesouraimg2">
             </div>
         </div>
         <div class="jokemRodape">
             <div class="selecao">
-                <button><img src="img/pedra.png" alt=""></button>
-                <button><img src="img/papel.png" alt=""></button>
-                <button><img src="img/tesoura.png" alt=""></button>
+                <button id="botao1"><img src="img/pedra.png" alt=""></button>
+                <button id="botao2"><img src="img/papel.png" alt=""></button>
+                <button id="botao3"><img src="img/tesoura.png" alt=""></button>
             </div>
             <div class="texto">
                 <p>GANHOU</p>
-                <p>PERDEU</p>
+                <!-- <p>PERDEU</p> -->
             </div>
             <div class="pontuacao">
                 <div><p>Player-</p><p class="r1">0</p></div>
-                <div><p>Maquina-</p><p class="r2"></p>0</p></div>
+                <div><p>Maquina-</p><p class="r2">0</p></div>
             </div>
         </div>
     
     </div>
-    <div class="jogoVelha"></div>
+    <div class="semaforo">
+        <div class="sinal">
+            <div class="vermelho"></div>
+            <div class="amarelo"></div>
+            <div class="verde"></div>
+        </div>
+    </div>
     <div class="calculadora"></div>
 </body>
 
