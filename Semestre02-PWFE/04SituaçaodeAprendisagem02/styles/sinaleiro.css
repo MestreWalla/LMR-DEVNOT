@@ -29,5 +29,7 @@
     background-color: beige;
 }
 .rua1A, .rua1B, .rua1C {
+  height: 100%;
+  width: 100%;
   background-color: grey;
 }
