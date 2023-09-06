@@ -26,5 +26,8 @@
 .bairro1A, .bairro2A, .bairro1C, .bairro2C {
     height: 100%;
     width: 100%;
-    background-color: grey;
+    background-color: beige;
+}
+.rua1A, .rua1B, .rua1C {
+  background-color: grey;
 }
