@@ -21,7 +21,7 @@
     height: 33%;
     width: 33%;
 }
-.bairro1A {
+.bairro1A, .bairro2A, .bairro1C, .bairro2C {
     height: 100%;
     width: 100%;
     background-color: grey;
