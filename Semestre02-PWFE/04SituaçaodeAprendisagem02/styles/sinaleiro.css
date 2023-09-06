@@ -1,0 +1,18 @@
+.sinal {
+    background-color: black;
+    height: 400px;
+    width: 150px;
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    & .vermelho, .amarelo, .verde {
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+        border-radius: 50px;
+    } & .vermelho {background-color: red;
+    } & .amarelo {background-color: yellow;
+    } & .verde {background-color: green;}
+}
