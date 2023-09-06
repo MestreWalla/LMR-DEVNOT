@@ -3,8 +3,8 @@
     height: 180px;
     width: 60px;
     border-radius: 75px;
-    position: fixed;
-    z-index: -1;
+    position: absolute;
+    z-index: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,9 +33,48 @@
     height: 100%;
     width: 100%;
     background-color: beige;
+    & div {
+      background-color: green;
+      width: 80%;
+      height: 80%;
+    }
 }
-.rua01A, .rua01B, .rua01C, .bairro1B, .vairro2B {
+.bairro1A {
+  border-radius: 0px 0px 100px 0px;
+  & div {
+    border-radius: 0px 0px 60px 0px;
+  }
+}
+.bairro2A {
+  border-radius: 0px 0px 0px 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  & div {
+    border-radius: 0px 0px 0px 60px;
+  }
+}
+.bairro1C {
+  border-radius: 0px 100px 0px 0px;
+  display: flex;
+  flex-direction: column-reverse;
+  & div {
+    border-radius: 0px 60px 0px 0px;
+  }
+}
+.bairro2C {
+  border-radius: 100px 0px 0px 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  & div {
+    border-radius: 60px 0px 0px 0px;
+  }
+}
+.rua01A, .rua01B, .rua01C, .rua1E, .rua2D {
   height: 100%;
   width: 100%;
   background-color: grey;
+}
+.rua01A {
+  border-radius: -100px 0px -1000px -100px;
 }
