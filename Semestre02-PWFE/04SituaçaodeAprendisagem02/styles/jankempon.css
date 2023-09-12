@@ -89,7 +89,7 @@
 }
 @media only screen and (max-width: 480px) and (orientation: portrait) {
   .jankenpon {
-    font-size: 10px;
+    font-size: 30px;
   }
   .game {
     flex-direction: column;
@@ -98,6 +98,7 @@
 .player01,
 .player02 {
   width: 90%;
+  height: 50px;
 }
   .jokemRodape {
     flex-direction: column;
