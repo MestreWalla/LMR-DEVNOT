@@ -98,7 +98,7 @@
 .player01,
 .player02 {
   width: 90%;
-  height: 50px;
+  height: 200px;
 }
   .jokemRodape {
     flex-direction: column;
