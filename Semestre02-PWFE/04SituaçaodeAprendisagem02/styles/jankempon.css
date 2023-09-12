@@ -10,6 +10,7 @@
 
 .game {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -18,14 +19,14 @@
 .player01,
 .player02 {
     background-color: rgba(255, 255, 255, 0.577);
-    height: 400px;
+    height: 0;
     width: 400px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     & img {
-        width: 350px;
+        width: 90%;
         display: none;
     }
 }
@@ -37,6 +38,7 @@
 }
 .jokemRodape {
     display: flex;
+    flex-direction: row;
     gap: 100px;
     align-items: center;
 }
@@ -86,5 +88,10 @@
     display: flex;
 }
 @media only screen and (max-width: 480px) and (orientation: portrait) {
-  
+  .game {
+    flex-direction: column;
+  }
+  .jokemRodape {
+    flex-direction: column;
+  }
 }
