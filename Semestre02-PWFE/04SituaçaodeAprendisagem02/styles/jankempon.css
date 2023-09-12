@@ -91,6 +91,11 @@
   .game {
     flex-direction: column;
   }
+  
+.player01,
+.player02 {
+  width: 900%;
+}
   .jokemRodape {
     flex-direction: column;
   }
