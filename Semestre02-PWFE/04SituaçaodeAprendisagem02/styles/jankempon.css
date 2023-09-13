@@ -19,7 +19,7 @@
 .player01,
 .player02 {
     background-color: rgba(255, 255, 255, 0.577);
-    height: 0;
+    height: 400px;
     width: 400px;
     border-radius: 10px;
     display: flex;
@@ -47,7 +47,7 @@
     flex-direction: row;
     gap: 30px;
     & button {
-        border-radius: 50px;
+        border-radius: 20px;
         height: 80px;
         width: 100px;
         align-items: center;
@@ -88,22 +88,30 @@
     display: flex;
 }
 @media only screen and (max-width: 480px) and (orientation: portrait) {
-  .jankenpon {
+.jankenpon {
     font-size: 30px;
   }
-  .game {
-    flex-direction: column;
+.game {
+    flex-direction: column-reverse;
+    gap: 10px;
   }
 
 .player01,
 .player02 {
-  width: 150%;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   & img {
-      width: 100px;
+      width: 100%;
     }
 }
-  .jokemRodape {
+.x p {
+    font-size: 40px;
+}
+.jokemRodape {
     flex-direction: column;
+    gap: 20px;
   }
+.pontuacao {
+    font-size: 40px;
+}
 }
