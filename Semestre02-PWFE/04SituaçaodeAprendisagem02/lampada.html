@@ -6,30 +6,26 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, orientation=landscape">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/lampada.css">
     <link rel="stylesheet" href="styles/fullscreen.css">
-    <link rel="stylesheet" href="styles/index.css">
     <title>Games</title>
 </head>
 
 <body>
+    <a href="index.html" class="voltar"></a>
     <button type="submit" id="botaotelacheia" class="telacheia">FULLSCREEN</button>
-    <div class="container">
-        <div class="games">
-            <img src="img/lampada.png" alt="">
-            <h1>Lâmpada</h1>
-            <h4>Atividade de nivel fácil</h4>
+    <div class="lampada" id="lampada">
+        <div class="bulbo"></div>
+        <div class="luz" id="luz">
+            <img src="img/trinco01.png" alt="" class="quebrado" id="quebrado">
         </div>
-        <div class="games">
-            <img src="img/jankempon.png" alt="">
-            <h1>Jankempon</h1>
-            <h4>Atividade de nivel fácil</h4>
-        </div>
-        <div class="games">
-            <img src="img/cidade_bg.jpg" alt="">
-            <h1>Semaforo</h1>
-            <h4>Atividade de nivel fácil</h4>
+        <div class="interruptor">
+            <div class="caixa">
+                <button type="submit" id="botao"><img src="img/chave.png" alt="" id="chave"></button>
+            </div>
         </div>
     </div>
+    <script src="js/lampada.js"></script>
     <script src="js/fullscreen.js"></script>
 </body>
 
