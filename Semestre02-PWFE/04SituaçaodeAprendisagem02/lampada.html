@@ -5,28 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, orientation=landscape">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/lampada.css">
-    <link rel="stylesheet" href="styles/fullscreen.css">
-    <title>Games</title>
+    <!-- Configura as metatags para controlar a escala da página e a orientação da tela -->
+    <link rel="stylesheet" href="styles/main.css"> <!-- Inclui um arquivo CSS chamado "main.css" para estilização principal -->
+    <link rel="stylesheet" href="styles/lampada.css"> <!-- Inclui um arquivo CSS chamado "lampada.css" para estilização relacionada à lâmpada -->
+    <link rel="stylesheet" href="styles/fullscreen.css"> <!-- Inclui um arquivo CSS chamado "fullscreen.css" para estilização em tela cheia -->
+    <title>Games</title> <!-- Define o título da página como "Games" -->
 </head>
 
 <body>
-    <a href="index.html" class="voltar"></a>
+    <a href="index.html" class="voltar"></a> <!-- Um link que permite voltar para a página "index.html" -->
     <button type="submit" id="botaotelacheia" class="telacheia">FULLSCREEN</button>
-    <div class="lampada" id="lampada">
-        <div class="bulbo"></div>
-        <div class="luz" id="luz">
-            <img src="img/trinco01.png" alt="" class="quebrado" id="quebrado">
+    <!-- Botão para ativar o modo de tela cheia -->
+    <div class="lampada" id="lampada"> <!-- Um contêiner que representa a lâmpada -->
+        <div class="bulbo"></div> <!-- Representação visual do bulbo da lâmpada -->
+        <div class="luz" id="luz"> <!-- Representação visual da luz da lâmpada, que provavelmente será alterada dinamicamente -->
+            <img src="img/trinco01.png" alt="" class="quebrado" id="quebrado"> <!-- Uma imagem que pode representar a lâmpada quebrada -->
         </div>
-        <div class="interruptor">
+        <div class="interruptor"> <!-- Representação visual do interruptor -->
             <div class="caixa">
                 <button type="submit" id="botao"><img src="img/chave.png" alt="" id="chave"></button>
+                <!-- Um botão que pode ser usado como interruptor -->
             </div>
         </div>
     </div>
-    <script src="js/lampada.js"></script>
-    <script src="js/fullscreen.js"></script>
+    <script src="js/lampada.js"></script> <!-- Inclui um arquivo JavaScript chamado "lampada.js" -->
+    <script src="js/fullscreen.js"></script> <!-- Inclui um arquivo JavaScript chamado "fullscreen.js" -->
 </body>
 
 </html>

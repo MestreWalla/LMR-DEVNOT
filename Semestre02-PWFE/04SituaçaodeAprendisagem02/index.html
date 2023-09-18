@@ -5,35 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, orientation=landscape">
+    <!-- Configura as metatags para controlar a escala da página e a orientação da tela -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- Inclui um arquivo CSS chamado "main.css" para estilização principal -->
+    <link rel="stylesheet" href="styles/jankempon.css">
+    <!-- Inclui um arquivo CSS chamado "jankempon.css" para estilização relacionada ao jogo "Jankenpon" -->
     <link rel="stylesheet" href="styles/fullscreen.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Games</title>
+    <!-- Inclui um arquivo CSS chamado "fullscreen.css" para estilização em tela cheia -->
+    <title>Games</title> <!-- Define o título da página como "Games" -->
 </head>
 
 <body>
     <button type="submit" id="botaotelacheia" class="telacheia">FULLSCREEN</button>
-    <div class="container">
-        <div class="games">
-            <a href="lampada.html">
-            <img src="img/lampada.png" alt=""></a>
-            <h1>Lâmpada</h1>
-            <h4>Atividade de nivel fácil</h4>
+    <!-- Botão para ativar o modo de tela cheia -->
+    <div class="jankenpon"> <!-- Um contêiner que representa o jogo "Jankenpon" -->
+        <div class="texto">
+            <p>JANKENPON</p> <!-- Título do jogo "Jankenpon" -->
         </div>
-        <div class="games">
-            <a href="jankenpon.html">
-            <img src="img/jankempon.png" alt=""></a>
-            <h1>Jankempon</h1>
-            <h4>Atividade de nivel fácil</h4>
+        <div class="game"> <!-- Contêiner que representa o jogo em si -->
+            <div class="player01"> <!-- Representação visual das escolhas do jogador 01 -->
+                <img src="img/pedra.png" alt="Imagem 1" class="papel" id="pedraimg">
+                <!-- Imagem da pedra -->
+                <img src="img/papel.png" alt="Imagem 2" class="tesoura" id="papelimg">
+                <!-- Imagem do papel -->
+                <img src="img/tesoura.png" alt="Imagem 3" class="pedra" id="tesouraimg">
+                <!-- Imagem da tesoura -->
+            </div>
+            <div class="x">
+                <p>X</p> <!-- O símbolo "X" que separa as escolhas dos jogadores -->
+            </div>
+            <div class="player02"> <!-- Representação visual das escolhas do jogador 02 (provavelmente a máquina) -->
+                <img src="img/pedra.png" alt="" class="papel" id="pedraimg2">
+                <img src="img/papel.png" alt="" class="tesoura" id="papelimg2">
+                <img src="img/tesoura.png" alt="" class="pedra" id="tesouraimg2">
+            </div>
         </div>
-        <div class="games">
-            <a href="sinaleiro.html">
-            <img src="img/Sinaleiro.png" alt=""></a>
-            <h1>Semaforo</h1>
-            <h4>Atividade de nivel fácil</h4>
+        <div class="jokemRodape"> <!-- Rodapé do jogo "Jankenpon" -->
+            <div class="selecao"> <!-- Botões de seleção das escolhas do jogador -->
+                <button id="botao1"><img src="img/pedra.png" alt=""></button> <!-- Botão para escolher a pedra -->
+                <button id="botao2"><img src="img/papel.png" alt=""></button> <!-- Botão para escolher o papel -->
+                <button id="botao3"><img src="img/tesoura.png" alt=""></button> <!-- Botão para escolher a tesoura -->
+            </div>
+            <div class="texto">
+                <p>GANHOU</p> <!-- Mensagem que indica que o jogador ganhou -->
+                <!-- <p>PERDEU</p> -->
+                <!-- Comentado provavelmente porque a mensagem de perda está desabilitada -->
+            </div>
+            <div class="pontuacao"> <!-- Exibição da pontuação dos jogadores -->
+                <div>
+                    <p>Player-</p> <!-- Pontuação do jogador -->
+                    <p class="r1">0</p> <!-- Pontuação atual do jogador 01 -->
+                </div>
+                <div>
+                    <p>Maquina-</p> <!-- Pontuação da máquina (jogador 02) -->
+                    <p class="r2">0</p> <!-- Pontuação atual da máquina (jogador 02) -->
+                </div>
+            </div>
         </div>
     </div>
+    <script src="js/jankenpon.js"></script>
+    <!-- Inclui um arquivo JavaScript chamado "jankenpon.js" para controlar a lógica do jogo -->
     <script src="js/fullscreen.js"></script>
+    <!-- Inclui um arquivo JavaScript chamado "fullscreen.js" para controlar a funcionalidade de tela cheia -->
 </body>
 
 </html>

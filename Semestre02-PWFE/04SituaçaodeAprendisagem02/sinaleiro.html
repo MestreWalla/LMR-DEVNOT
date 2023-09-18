@@ -6,33 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semáforo</title>
-    <link rel="stylesheet" href="styles/sinaleiro.css">
-    <link rel="stylesheet" href="styles/fullscreen.css">
+    <link rel="stylesheet" href="styles/sinaleiro.css"> <!-- Inclui um arquivo CSS para estilizar a página -->
+    <link rel="stylesheet" href="styles/fullscreen.css"> <!-- Inclui outro arquivo CSS para estilização em tela cheia -->
 </head>
 
-
-<body onload="time()">
-    <button type="submit" id="botaotelacheia" class="telacheia">FULLSCREEN</button>
+<body onload="time()"> <!-- Quando a página é carregada, a função "time()" será chamada -->
+    <button type="submit" id="botaotelacheia" class="telacheia">FULLSCREEN</button> <!-- Botão para ativar o modo de tela cheia -->
     <div class="placa">
         <div class="caixa2">
-            <h1>ATENÇÃO!!!</h1>
-            <HR></HR>
-            <h1>Semáforo Amarelo piscante das 00h às 5h!</h1>
-            <div class="txt" id="txt"></div>
+            <h1>ATENÇÃO!!!</h1> <!-- Título de aviso -->
+            <HR></HR> <!-- Linha horizontal -->
+            <h1>Semáforo Amarelo piscante das 00h às 5h!</h1> <!-- Outro título informativo -->
+            <div class="txt" id="txt"></div> <!-- Uma div com um identificador "txt" que provavelmente será preenchida dinamicamente com informações -->
         </div>
-        <div class="poste2"></div>
+        <div class="poste2"></div> <!-- Uma representação visual de um poste -->
     </div>
 
     <div class="caixa">
         <div class="container">
-            <span class="vermelho"></span>
-            <span class="amarelo"></span>
-            <span class="verde"></span>
+            <span class="vermelho"></span> <!-- Um elemento visual que representa a luz vermelha do semáforo -->
+            <span class="amarelo"></span> <!-- Um elemento visual que representa a luz amarela do semáforo -->
+            <span class="verde"></span> <!-- Um elemento visual que representa a luz verde do semáforo -->
         </div>
         <div class="poste">
         </div>
     </div>
 </body>
-<script src="js/sinaleiro.js"></script>
-<script src="js/fullscreen.js"></script>
+<script src="js/sinaleiro.js"></script> <!-- Inclui um arquivo JavaScript chamado "sinaleiro.js" -->
+<script src="js/fullscreen.js"></script> <!-- Inclui um arquivo JavaScript chamado "fullscreen.js" -->
 </html>
