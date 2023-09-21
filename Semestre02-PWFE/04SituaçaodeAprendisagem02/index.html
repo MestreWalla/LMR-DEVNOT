@@ -6,18 +6,31 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, orientation=landscape">
     <!-- Configura as metatags para controlar a escala da página e a orientação da tela -->
-    <link rel="stylesheet" href="styles/main.css"> <!-- Inclui um arquivo CSS chamado "main.css" para estilização principal -->
-    <link rel="stylesheet" href="styles/fullscreen.css"> <!-- Inclui um arquivo CSS chamado "fullscreen.css" para estilização em tela cheia -->
-    <link rel="stylesheet" href="styles/index.css"> <!-- Inclui um arquivo CSS chamado "index.css" para estilização da página inicial -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Inclui um arquivo CSS chamado "main.css" para estilização principal -->
+    <link rel="stylesheet" href="styles/botoes.css">
+    <!-- Inclui um arquivo CSS chamado "botoes.css" para estilização em tela cheia -->
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- Inclui um arquivo CSS chamado "index.css" para estilização da página inicial -->
     <title>Games</title> <!-- Define o título da página como "Games" -->
 </head>
 
 <body>
-    <button type="submit" id="botaotelacheia" class="telacheia">FULLSCREEN</button>
-    <!-- Botão para ativar o modo de tela cheia -->
+    <div class="botoesNav">
+        <button type="submit" id="botaotelacheia" class="telacheia">
+            <img src="img/fullscreen.png" alt="">
+            <p>FULLSCREEN</p>
+        </button>
+        <a href="index.html" class="voltar">
+                <img src="img/voltar.png" alt="">
+                <p>VOLTAR</p>
+            </div>
+        </a>
+    </div>
     <div class="container"> <!-- Um contêiner principal para os jogos listados -->
         <div class="games"> <!-- Um contêiner para o primeiro jogo "Lâmpada" -->
             <a href="lampada.html"> <!-- Um link que direciona para a página do jogo "Lâmpada" -->
+                <img src="img/controle.png" alt="" class="control">
                 <img src="img/lampada.png" alt=""> <!-- Imagem do jogo "Lâmpada" -->
             </a>
             <h1>Lâmpada</h1> <!-- Título do jogo "Lâmpada" -->
@@ -25,20 +38,23 @@
         </div>
         <div class="games"> <!-- Um contêiner para o segundo jogo "Jankempon" -->
             <a href="jokenpo.html"> <!-- Um link que direciona para a página do jogo "Jankempon" -->
+                <img src="img/controle.png" alt="" class="control">
                 <img src="img/jankempon.png" alt=""> <!-- Imagem do jogo "Jankempon" -->
             </a>
-            <h1>Jankempon</h1> <!-- Título do jogo "Jankempon" -->
+            <h1>jokenpo</h1> <!-- Título do jogo "Jankempon" -->
             <h4>Atividade de nivel fácil</h4> <!-- Descrição ou nível de dificuldade do jogo -->
         </div>
         <div class="games"> <!-- Um contêiner para o terceiro jogo "Semaforo" -->
             <a href="sinaleiro.html"> <!-- Um link que direciona para a página do jogo "Semaforo" -->
+                <img src="img/controle.png" alt="" class="control">
                 <img src="img/Sinaleiro.png" alt=""> <!-- Imagem do jogo "Semaforo" -->
             </a>
             <h1>Semaforo</h1> <!-- Título do jogo "Semaforo" -->
             <h4>Atividade de nivel fácil</h4> <!-- Descrição ou nível de dificuldade do jogo -->
         </div>
     </div>
-    <script src="js/fullscreen.js"></script> <!-- Inclui um arquivo JavaScript chamado "fullscreen.js" para controlar a funcionalidade de tela cheia -->
+    <script src="js/fullscreen.js"></script>
+    <!-- Inclui um arquivo JavaScript chamado "fullscreen.js" para controlar a funcionalidade de tela cheia -->
 </body>
 
 </html>
