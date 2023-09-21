@@ -18,8 +18,8 @@ contadorJOGADOR.style.display = J1P;
 contadorCPU.style.display = cpuP;
 
 function atualizarPlacar() {
-  document.getElementById("contadorJOGADOR").textContent = J1P;
-  document.getElementById("contadorCPU").textContent = cpuP;
+  document.getElementById("contadorJOGADOR").textContent = "Player: " + J1P;
+  document.getElementById("contadorCPU").textContent = "CPU: " + cpuP;
 }
 function Pedra() {
   var cpu = Math.floor(Math.random() * 10);

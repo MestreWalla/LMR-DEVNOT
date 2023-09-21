@@ -1,5 +1,13 @@
+:root{
+    background-image: url(../img/patern.jpg);
+}
 body{
-    background-color: black;
+    background-color: rgba(170, 170, 170, 0.19);
+    box-shadow: 0px 0px 90px 30px rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    margin: 20px;
+    height: 95vh;
     color: aliceblue;
     display: flex;
     align-items: center;
@@ -19,6 +27,7 @@ body{
     height: 200px;
     display: flex;
     align-items: center;
+    gap: 20px;
     & img{width: 200px;}
 }
 .painel{
@@ -29,4 +38,37 @@ body{
 }
 .mensagem{
     font-size: 24px;
+}
+.placar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(107, 59, 101, 0.452);
+    box-shadow: 0px 0px 90px 30px rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+}
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(107, 59, 101, 0.452);
+    
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    .painel {
+        flex-direction: column-reverse;
+        gap: 15px;
+        & img {width: 70px;}
+    }
+    .result, .placar {
+        width: 100%;
+        align-items: center;
+    }
+    .resultado img {
+        width: 150px;
+    }
 }
