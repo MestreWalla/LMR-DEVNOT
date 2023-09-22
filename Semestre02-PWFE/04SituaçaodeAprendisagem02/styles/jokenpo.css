@@ -23,6 +23,10 @@ body{
     align-items: center;
     justify-content: center;
 }
+.texto h1 {
+    font-size: 100px;
+}
+
 .resultado{
     height: 200px;
     display: flex;
@@ -34,7 +38,11 @@ body{
     display: flex;
     gap: 40px;
     align-items: center;
-    & img{width: 100px;}
+    & img{width: 100px;
+     &:hover {
+        filter: brightness(2);
+        }
+    }
 }
 .mensagem{
     font-size: 24px;
@@ -58,7 +66,7 @@ body{
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 480px) and (orientation: portrait) {
+@media only screen and (max-width: 580px) and (orientation: portrait) {
     .painel {
         flex-direction: column-reverse;
         gap: 15px;
@@ -70,5 +78,8 @@ body{
     }
     .resultado img {
         width: 150px;
+    }
+    .texto h1 {
+        font-size: 50px;
     }
 }
