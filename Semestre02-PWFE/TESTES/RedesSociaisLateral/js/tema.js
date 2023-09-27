@@ -7,11 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
     function alterarTema() {
         if (contador === 0) {
             document.body.style.backgroundColor = "black";
-            diaNoite.textContent = "Noite";
+            tema.style.backgroundColor = "red";
+            tema.style.justifyContent = "flex-end";
+            // diaNoite.textContent = "Noite";
             contador++;
         } else {
             document.body.style.backgroundColor = "white";
-            diaNoite.textContent = "Dia";
+            tema.style.backgroundColor = "green";
+            tema.style.justifyContent = "flex-start";
+            // diaNoite.textContent = "Dia";
             contador--;
         }
     }

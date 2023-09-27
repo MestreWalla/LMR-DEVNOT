@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const abrir = document.getElementById("abrir");
     const fechar = document.getElementById("fechar");
     const img = document.getElementById("logos");
-    let contador = 0;    
+    let contador = 1;    
 
     function menu() {
         if (contador == "0") {

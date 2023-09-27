@@ -9,11 +9,18 @@
     border-width: 0px;
     display: flex;
     align-items: center;
-    justify-content:first baseline
+    justify-content: flex-start;
 }
 .diaNoite {
     height: 18px;
     width: 18px;
     background-color: white;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+        height: 16px;
+        border-radius: 50%;
+    }
 }
