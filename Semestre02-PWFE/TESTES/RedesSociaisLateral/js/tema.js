@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const tema = document.getElementById("tema");
+    const botao = document.getElementById("diaNoite");
 
     let contador = 0;    
 
     function alterarTema() {
         if (contador === "0") {
-            tema.style.backgroundcolor = "black";
+            botao.style.backgroundcolor = "black";
 
             contador++;
         } else {
-            tema.style.backgroundcolor = "white";
+            botao.style.backgroundcolor = "white";
 
             contador--;
         }
