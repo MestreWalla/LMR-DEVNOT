@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             contador++;
         } else {
-            botao.style.backgroundcolor = "white";
+            botao.style.backgroundcolor = "blue";
+            botao.style.backgroundcolor = "blue";
 
             contador--;
         }
