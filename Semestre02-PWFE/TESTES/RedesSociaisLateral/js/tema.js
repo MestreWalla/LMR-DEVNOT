@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const botao = document.getElementById("diaNoite");
-    let botao = ""
 
     let contador = 0;    
 
@@ -15,5 +14,5 @@ document.addEventListener("DOMContentLoaded", function () {
             contador--;
         }
     }
-    tema.addEventListener("click", alterarTema);
+    tema.addEventListener("click", alterarTema;
 });
