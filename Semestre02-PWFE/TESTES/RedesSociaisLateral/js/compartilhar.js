@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let contador = 0;    
 
     function menu() {
-        if (contador == "0") {
+        if (contador === "0") {
             abrir.style.display = "block";
             fechar.style.display = "none";
             img.style.display = "none";
