@@ -1,19 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const botao = document.getElementById("diaNoite");
+    const tema = document.getElementById("tema");
+    const diaNoite = document.getElementById("diaNoite");
 
-    let contador = 2;    
+    let contador = 0;
 
     function alterarTema() {
-        if (contador == "2") {
-            botao.style.backgroundcolor = "black";
-
+        if (contador === 0) {
+            document.body.style.backgroundColor = "black";
+            diaNoite.textContent = "Noite";
             contador++;
         } else {
-            botao.style.backgroundcolor = "blue";
-            botao.style.backgroundcolor = "blue";
-
+            document.body.style.backgroundColor = "white";
+            diaNoite.textContent = "Dia";
             contador--;
         }
     }
-    tema.addEventListener("click", alterarTema;
+
+    tema.addEventListener("click", alterarTema);
 });
