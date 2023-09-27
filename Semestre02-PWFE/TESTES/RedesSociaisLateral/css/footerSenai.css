@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: rgb(26, 50, 101);
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+  }
+  
+.criador h5 {
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
