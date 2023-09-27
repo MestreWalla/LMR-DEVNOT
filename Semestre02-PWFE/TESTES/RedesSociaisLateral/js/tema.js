@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let contador = 0;    
 
     function alterarTema() {
-        if (contador == "0") {
-            tema.style.background-color = "black";
+        if (contador === "0") {
+            tema.style.backgroundcolor = "black";
 
             contador++;
         } else {
-            tema.style.background-color = "white";
+            tema.style.backgroundcolor = "white";
 
             contador--;
         }
