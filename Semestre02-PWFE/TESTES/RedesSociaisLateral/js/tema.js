@@ -21,7 +21,7 @@ const root = document.documentElement;
             tema.style.backgroundColor = "green";
             tema.style.justifyContent = "flex-start";
             // diaNoite.textContent = "Dia";
-            root.style.setProperty('--primary-color', '#263238');
+            root.style.setProperty('--primary-color', 'white');
             contador--;
         }
     }
