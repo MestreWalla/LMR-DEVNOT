@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const tema = document.getElementById("tema");
     const diaNoite = document.getElementById("diaNoite");
+    // Acesse o elemento :root do seu documento
+const root = document.documentElement;
+
 
     let contador = 0;
 
@@ -10,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
             tema.style.backgroundColor = "red";
             tema.style.justifyContent = "flex-end";
             // diaNoite.textContent = "Noite";
+            root.style.setProperty('--primary-color', 'black');
+
             contador++;
         } else {
             document.body.style.backgroundColor = "white";
