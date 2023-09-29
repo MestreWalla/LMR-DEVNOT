@@ -1,6 +1,6 @@
 :root {
     --primary-color: white;
-    --paragraph-color: white;
+    --Primary-text-color: black;
 }
 body {
     background-color: var(--primary-color);
@@ -42,6 +42,7 @@ body {
         border-radius: 50%;
     } & h1 {
         background-color: var(--primary-color);
+        color: var(--Primary-text-color);
         padding: 10px;
         border-radius: 40px;
         font-size: larger;
@@ -73,6 +74,7 @@ body {
         border-radius: 50%;
     } & h1 {
         background-color: var(--primary-color);
+        color: var(--Primary-text-color);
         padding: 10px;
         border-radius: 40px;
         font-size: larger;
