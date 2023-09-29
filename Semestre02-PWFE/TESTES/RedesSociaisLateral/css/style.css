@@ -1,5 +1,6 @@
 :root {
     --primary-color: white;
+    --paragraph-color: white;
 }
 body {
     background-color: var(--primary-color);
