@@ -13,7 +13,7 @@ const root = document.documentElement;
             tema.style.backgroundColor = "red";
             tema.style.justifyContent = "flex-end";
             // diaNoite.textContent = "Noite";
-            root.style.setProperty('--primary-color', 'black');
+            root.style.setProperty('--primary-color', '#263238');
 
             contador++;
         } else {
