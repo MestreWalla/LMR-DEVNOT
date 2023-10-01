@@ -1,0 +1,9 @@
+.botao01 {
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  background-color: yellow;
+}
+.dentroBotao01 {
+  background-color: white;
+}
