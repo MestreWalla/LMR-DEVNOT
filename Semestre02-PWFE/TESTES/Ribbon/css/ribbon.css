@@ -1,29 +1,44 @@
+:root {
+    --primary-color: #f5f6f7;
+    --secondary-color: white;
+    --tertiary-color: black;
+    --quaternary-color: #dadbdc; /* BackgroundColor */
+    --quinary-color: rgba(127, 255, 212, 0.42); /* BorderColorHOVER */
+    --senary-color: rgb(238, 255, 254); /* BackgroundColorHOVER */
+    --font-color:white;
+    --border-color: white;
+}
 .ribbonmenu {
-    background-color: #f5f6f7;
+    background-color: var(--primary-color);
 }
 
 .abas {
     padding: 1px;
     display: flex;
+    list-style: none;
 }
-.abas li:nth-child(2) {
-    border: 0px;
+.abas li:hover {
+    background-color: var(--senary-color);
 }
-.abas li:nth-child(3) {
-    border: 0px;
+.abas li:active {
+    border: 1px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: var(--border-color);
+    background-color: var(--quinary-color);
 }
 
 .aba {
     border: 1px;
     border-bottom: 0px;
     border-style: solid;
-    border-color: black;
+    border-color: var(--border-color);
     padding: 0px 10px 0px 10px;
 }
 
 .aba a {
     text-decoration: none;
-    color: black;
+    color: var(--tertiary-color);
 }
 
 .conteudo {
@@ -37,7 +52,7 @@
     padding: 2px;
     border-width: 1px;
     border-style: solid;
-    border-color: #dadbdc;
+    border-color: var(--border-color);
 }
 .grupoI {
     display: flex;
@@ -51,13 +66,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 2px;
-    border-width: 0px;
+    border: 1px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 .botao:hover {
     border: 1px;
-    border-color: rgba(127, 255, 212, 0.42);
+    border-color: var(--quinary-color);
     border-style: solid;
-    background-color: rgb(238, 255, 254);
+    background-color: var(--senary-color);
+}
+.botao:active {
+    background-color: var(--quinary-color);
 }
 .icon {
     display: flex;
@@ -76,14 +98,15 @@
     border: 0px;
     border-top: 1px;
     border-style: solid;
-    border-color: #dadbdc;
+    border-color: var(--border-color);
+    color: var(--tertiary-color);
 }
 
 .grupoBotoes {
     border: 0px;
     border-top: 1px;
     border-style: solid;
-    border-color: #dadbdc;
+    border-color: var(--border-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,20 +116,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--secondary-color);
 }
 
 .botaoL {
     display: flex;
     margin: 1px;
-    background-color: white;
-    border: none;
+    background-color: var(--secondary-color);
+    border: 1px;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    gap: 5px;
+    color: var(--tertiary-color);
 }
 .botaoL:hover {
     border: 1px;
-    border-color: rgba(127, 255, 212, 0.42);
+    border-color: var(--quinary-color);
     border-style: solid;
-    background-color: rgb(238, 255, 254);
+    background-color: var(--senary-color);
+}
+.botaoL:active {
+    background-color: var(--quinary-color);
 }
 
 .iconP img {
