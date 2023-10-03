@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             root.style.setProperty('--secondary-color', '#222933');
             root.style.setProperty('--tertiary-color', 'white');
             root.style.setProperty('--quaternary--color', '#222933');
-            root.style.setProperty('--quinary-color', 'black');
+            root.style.setProperty('--quinary-color', '5b6d88');
             root.style.setProperty('--senary-color', '#475568');
             root.style.setProperty('--border-color', '#475568');
 
