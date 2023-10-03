@@ -11,10 +11,10 @@
 .ribbonmenu {
     background-color: var(--primary-color);
 }
-
 .abas {
     padding: 1px;
     display: flex;
+    flex-direction: row;
     list-style: none;
 }
 .abas li:hover {
@@ -27,7 +27,6 @@
     border-color: var(--border-color);
     background-color: var(--quinary-color);
 }
-
 .aba {
     border: 1px;
     border-bottom: 0px;
@@ -35,16 +34,13 @@
     border-color: var(--border-color);
     padding: 0px 10px 0px 10px;
 }
-
 .aba a {
     text-decoration: none;
     color: var(--tertiary-color);
 }
-
 .conteudo {
     display: flex;
 }
-
 .grupo {
     display: flex;
     flex-direction: column;
@@ -84,12 +80,10 @@
 .icon {
     display: flex;
 }
-
 .icon img {
     width: 20px;
     height: 20px;
 }
-
 .titulo {
     margin-top: 1px;
     display: flex;
@@ -101,7 +95,6 @@
     border-color: var(--border-color);
     color: var(--tertiary-color);
 }
-
 .grupoBotoes {
     border: 0px;
     border-top: 1px;
@@ -118,7 +111,6 @@
     justify-content: space-between;
     background-color: var(--secondary-color);
 }
-
 .botaoL {
     display: flex;
     margin: 1px;
@@ -138,7 +130,6 @@
 .botaoL:active {
     background-color: var(--quinary-color);
 }
-
 .iconP img {
     width: 10px;
     height: 10px;
