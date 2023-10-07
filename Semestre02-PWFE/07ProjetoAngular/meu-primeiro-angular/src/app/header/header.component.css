@@ -1,0 +1,46 @@
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    border-radius: 25px;
+    background-color: rgb(254, 218, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px;
+    gap: 5px;
+    list-style: none;
+    width: max-content;
+}
+li {
+    background-color: rgb(164, 254, 224);
+    border-radius: 20px;
+    padding: 5px;
+    width: 120px;
+    align-items: center;
+    text-align: center;
+    border-width: 1px;
+    border-style: inset;
+    border-color: rgba(127, 255, 212, 0);
+    &:hover {
+        background-color: rgb(255, 196, 196);
+        border-style: inset;
+        border-color: red;
+        & > a {
+            color: rgb(146, 0, 0);
+        }
+    } &:active {
+        background-color: azure;
+    }
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(41, 109, 87);
+    user-select: none;
+    font-weight: bold;
+}

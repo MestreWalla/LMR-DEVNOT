@@ -35,7 +35,7 @@ function TodoList() { // Define uma função de componente chamada 'TodoList'.
                         {task}
                         {/* Exibe o texto da tarefa. */}
                         < button onClick={() =>
-                            deleteTask(index)}>Excluir</button>
+                            deleteTask(index)}></button>
                         {/* Renderiza um botão "Excluir" que chama a função 'deleteTask' quando clicado. */}
                     </li>
                 ))

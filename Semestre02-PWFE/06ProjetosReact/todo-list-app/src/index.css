@@ -9,9 +9,18 @@ body {
   color: white;
 }
 
-input, button {
+input {
   border-radius: 5px;
   margin: 5px;
+}
+button {
+  background-image: url("img/x.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-color: none;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
 }
 
 code {
