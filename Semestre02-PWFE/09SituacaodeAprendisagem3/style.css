@@ -98,6 +98,15 @@ img {
     border-radius: 10px;
 }
 
+.menuButton {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  background-color: red;
+  padding: 5px;
+  gap: 5px;
+}
+
 @media only screen and (max-width: 780px) and (orientation: portrait) {
     .menu02, .logar {
         display: none;
