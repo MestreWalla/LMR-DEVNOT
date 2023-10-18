@@ -85,6 +85,9 @@ img {
 }
 
 .hamburguer, .carrinho {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
     background-color: white;
     height: 50px;
     width: 50px;
@@ -108,11 +111,6 @@ img {
   padding: 5px;
   gap: 5px;
   border-radius: 10px;
-  & button{
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-}
 }
 
 @media only screen and (max-width: 780px) and (orientation: portrait) {
