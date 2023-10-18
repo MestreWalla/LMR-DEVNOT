@@ -98,9 +98,10 @@ img {
 }
 
 .menuButton {
+  display: flex;
   position: fixed;
   bottom: 5px;
-  left: 5px;
+  right: 5px;
   background-color: red;
   padding: 5px;
   gap: 5px;
