@@ -111,6 +111,9 @@ img {
   padding: 5px;
   gap: 5px;
   border-radius: 10px;
+  & img {
+    height: 10px;
+  }
 }
 
 @media only screen and (max-width: 780px) and (orientation: portrait) {
