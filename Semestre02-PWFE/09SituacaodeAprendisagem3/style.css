@@ -105,6 +105,7 @@ img {
   background-color: red;
   padding: 5px;
   gap: 5px;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 780px) and (orientation: portrait) {
