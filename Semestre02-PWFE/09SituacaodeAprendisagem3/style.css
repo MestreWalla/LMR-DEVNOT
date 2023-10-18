@@ -106,6 +106,9 @@ img {
   padding: 5px;
   gap: 5px;
   border-radius: 10px;
+  & button{
+  
+}
 }
 
 @media only screen and (max-width: 780px) and (orientation: portrait) {
