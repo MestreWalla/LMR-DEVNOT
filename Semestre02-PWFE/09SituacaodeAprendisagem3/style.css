@@ -99,6 +99,8 @@ img {
 
 .menuButton {
   display: flex;
+  flex-direction: center;
+  align-items: center;
   position: fixed;
   bottom: 5px;
   right: 5px;
