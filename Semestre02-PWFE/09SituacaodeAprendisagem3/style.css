@@ -22,14 +22,16 @@ body {
 }
 
 header:hover>.menu02 {
-    width: 100%;
     position: fixed;
-    top: 80px;
-    margin-top: 0px;
+    transition: position 500ms linear;
+
 }
 
 .menu02 {
-    margin-top: 80px;
+    top: 80px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
     background-color: #549494;
     display: flex;
     justify-content: center;
@@ -86,13 +88,19 @@ img {
 
 .hamburguer, .carrinho {
   display: flex;
-  flex-direction: center;
+  justify-content: center;
   align-items: center;
     background-color: white;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
     border: none;
+    &:first-child {
+        border-radius: 25px 5px 5px 25px;
+    } &:last-child {
+        border-radius: 5px 25px 25px 5px;
+    } &:hover {
+        transform: scale(1.05);
+    }
 }
 .buscar {
     background-color: white;
@@ -102,7 +110,6 @@ img {
 
 .menuButton {
   display: flex;
-  flex-direction: center;
   align-items: center;
   position: fixed;
   bottom: 5px;
@@ -110,10 +117,13 @@ img {
   background-color: #6ebbbb;
   padding: 5px;
   gap: 5px;
-  border-radius: 10px;
+  border-radius: 60px;
   & img {
-    height: 10px;
+    height: 100%;
   }
+}
+.content {
+    margin-top: 160px;
 }
 
 @media only screen and (max-width: 780px) and (orientation: portrait) {
