@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/loginCadastro.css">
+
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="menu01">
             <img src="img/logo.png" alt="Logo">
             <div class="buscar">
-                <input type="PESQUISAR" placeholder="BUSCAR">                
+                <input type="PESQUISAR" placeholder="BUSCAR">
                 <img src="img/lupa.png" alt="">
             </div>
             <button class="logar"></button>
@@ -21,25 +25,51 @@
             </div>
         </div>
         <div class="menu02">
-            <ul>
-                <div class="img" id="img">
-                    <img src="img/xlogo.png" alt="">
-                    <h1>X</h1>
-                </div>
-                <li>Inicio</li>
-                <li>Loja</li>
-                <li>Sobre</li>
-                <li>Contato</li>
-            </ul>
-        </div>
+            <div class="menuItem" id="menuItem">
+                <img src="img/cao01.png" alt="">
+                <h5>Inicio</h5>
+            </div>
+            <div class="menuItem" id="menuItem">
+                <img src="img/cao01.png" alt="">
+                <h5>Loja</h5>
+            </div>
+            <div class="menuItem" id="menuItem">
+                <img src="img/cao01.png" alt="">
+                <h5>Serviços</h5>
+            </div>
+            <div class="menuItem" id="menuItem">
+                <img src="img/cao01.png" alt="">
+                <h5>Sobre</h5>
+            </div>
+            <div class="menuItem" id="menuItem">
+                <img src="img/cao01.png" alt="">
+                <h5>Contato</h5>
+            </div>
     </header>
-    <div class="menuButton">
-      <button class="carrinho">
-        <img src="img/carrinho.png" alt="">
-      </button>
-      <button class="hamburguer">
-        <img src="img/hamburguer.png" alt="">
-      </button>
+    <div class="loginCadastro">
+        <div class="fechar"></div>
+        <h2>Login</h2>
+        <form action="">
+            <!--Inicio do formulario-->
+            <!--Email-->
+            <label for="lembrar_senha">Seu e-mail:</label>
+            <input type="text" placeholder="E-mail" style="text-align: center" class="caixa" />
+            <!--Senha-->
+            
+            <label for="lembrar_senha">Sua senha:</label>
+            <div class="senha">
+                <input type="password" placeholder="Senha" style="text-align: center" class="caixa" />
+                <button>Esqueceu?</button>
+            </div>
+            
+            <a href="#">Esqueci a senha</a>
+            <div class="botoesDiv">
+            <!--Botão Enviar-->
+            <input type="submit" value="Logar" class="botoes" />
+            <!--Botão Cadastro-->
+            <input type="button" value="Não tem uma conta? Faça seu cadastro agora mesmo." class="botoes" />
+            </div>
+        </form>
     </div>
     <div class="content">
         <p>teste</p><br>
@@ -63,6 +93,7 @@
         <p>teste</p><br>
         <p>teste</p><br>
     </div>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
