@@ -1,8 +1,10 @@
 <template>
     <div class="catalogo-filmes">
         <h2>Catálogo de Filmes</h2>
+        <div class="insert">
         <input v-model="novoFilme" @keyup.enter="adicionarFilme" placeholder="Digite um novo filme" />
         <button @click="adicionarFilme">Adicionar</button>
+        </div>
         <ul>
             <li v-for="(filme, index) in filmes" :key="index">
                 {{ filme.titulo }}
@@ -42,6 +44,14 @@ export default {
 </script>
     
 <style scoped>
+.insert {
+    display: flex;
+    width: min-content;
+    background-color: rgb(172, 232, 234);
+    border-style: initial;
+    padding: 5px;
+    border-radius: 10px;
+}
 .catalogo-filmes {
     margin: 20px;
 }
@@ -55,13 +65,18 @@ li {
     margin: 10px 0;
     
 }
+input {
+    border-style: initial;
+    border-color: rgb(172, 232, 234);
+    background-color: rgb(172, 232, 234);
+}
 button{
+    height: 25px;
     margin: 5px;
-    &:nth-child(2) {
-        background-color: red;
-        color: white;
-        border-radius: 5px;
-        font-weight: bold;
-    }
+    border-radius: 5px;
+    font-weight: bold;
+    border-style: inherit;
+    background-color: rgb(44, 145, 149);
+    color: white;
 }
 </style>

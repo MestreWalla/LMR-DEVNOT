@@ -44,7 +44,6 @@ export default {
 <style scoped>
 .catalogo-livros {
     margin: 20px;
-    background-color: red;
 }
 
 ul {
@@ -58,11 +57,9 @@ li {
 }
 button{
     margin: 5px;
-    &:nth-child(2) {
-        background-color: red;
-        color: white;
-        border-radius: 5px;
-        font-weight: bold;
-    }
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
 }
 </style>
