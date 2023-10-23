@@ -1,0 +1,6 @@
+.image-carousel {
+    margin: 10px;
+    & img {
+        border-radius: 10px;
+    }
+}
