@@ -7,18 +7,27 @@
     --senary-color: green;
     --text-color: white;
   }
-
-.loginCadastro {
+iframe {
+    display: inline;
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
     top: 140px;
     left: 50%;
     transform: translateX(-50%);
     width: 500px;
     height: 500px;
+    border-style: none;
+}
+.loginCadastro {
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    /* top: 140px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    width: 90%;
+    height: 100%;
     border: 5px solid var(--primary-color);
     border-radius: 10px;
     background-color: var(--primary-color);
