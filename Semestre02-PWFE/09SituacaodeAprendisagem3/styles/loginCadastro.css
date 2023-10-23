@@ -51,6 +51,7 @@
             display: flex;
             background-color: var(--tertiary-color);
             align-items: center;
+            gap: 10px;
             & button {
                 background-color: rgb(205, 205, 205);
                 height: 60%;
