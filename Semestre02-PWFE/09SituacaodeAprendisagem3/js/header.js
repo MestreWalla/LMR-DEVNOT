@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Quando o usuário passar o mouse em cima da div
 menu02.addEventListener("mouseenter", function() {
     // Aplique a animação
-    menu02.style.animation = "showMenu 0.5s forwards ease-in-out";
+    menu02.style.animation = "showMenu 0.5s forwards";
 });
 
 // Quando o usuário passar o mouse para fora da div
