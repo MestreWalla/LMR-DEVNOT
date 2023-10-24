@@ -19,14 +19,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Quando o usuário passar o mouse em cima da div
-menu02.addEventListener("mouseenter", function() {
-    // Aplique a animação
-    menu02.style.animation = "showMenu 0.5s forwards 1 ease-in-out";
-});
 
-// Quando o usuário passar o mouse para fora da div
-menu02.addEventListener("mouseleave", function() {
-    // Remova a animação
-    menu02.style.animation = "none";
-});
