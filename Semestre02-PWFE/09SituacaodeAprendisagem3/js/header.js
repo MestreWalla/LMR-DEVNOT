@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var scrollPosition = window.scrollY || window.pageYOffset;
         if (scrollPosition >= menuPosition) {
             // Aplique a animação e a cor do menu
-            menu02.style.animation = "showMenu 0.5s forwards infinite";
+            menu02.style.animation = "showMenu 0.5s forwards";
             menu02.style.backgroundColor = "blue";
         } else {
             // Aplique a cor do menu
