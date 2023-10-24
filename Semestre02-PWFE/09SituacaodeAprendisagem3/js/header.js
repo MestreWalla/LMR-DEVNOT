@@ -2,16 +2,25 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Quando o usuário rolar a página
     window.addEventListener("scroll", function() {
-        // Verifique a posição do scroll
-        var scrollPosition = window.scrollY || window.pageYOffset;
         // Obtenha o elemento .menu02
         var menu02 = document.querySelector(".menu02");
-        if (scrollPosition <= 1) {
-            menu02.style.animation = "none";
-            menu02.style.backgroundColor = "red";
-        } else {
-            menu02.style.animation = "showMenu " +0.5+"s" +" forwards";
+        // Verifique a posição do menu em relação ao topo da página
+        var menuPosition = menu02.offsetTop;
+        // Verifique a posição do scroll da página
+        var scrollPosition = window.scrollY || window.pageYOffset;
+        if (scrollPosition >= menuPosition) {
+            // Aplique a animação e a cor do menu
+            menu02.style.animation = "showMenu 0.5s forwards";
             menu02.style.backgroundColor = "blue";
+        } else {
+            // Aplique a cor do menu
+            menu02.style.backgroundColor = "red";
         }
     });
 });
+
+// Função para definir as propriedades do menu
+function setMenuProperties(menu, animation, backgroundColor) {
+    menu.style.animation = animation;
+    menu.style.backgroundColor = backgroundColor;
+}
