@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Verifique a posição do menu em relação ao topo da página
         var menuPosition = menu02.offsetTop;
         // Verifique a posição do scroll da página
-        var scrollPosition = window.scrollY || window.pageYOffset;
+        var scrollPosition = window.scrollY;
         if (scrollPosition >= menuPosition) {
             // Aplique a animação e a cor do menu
             setMenuProperties(menu02, "showMenu 0.5s forwards infinite 1 ease-in-out", "blue");
