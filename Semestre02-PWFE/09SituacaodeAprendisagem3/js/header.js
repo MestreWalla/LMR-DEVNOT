@@ -13,10 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
             menu02.style.animation = "showMenu 0.5s forwards infinite 1 ease-in-out";
             menu02.style.backgroundColor = "blue";
         } else {
+           menu02.style.animation = "none";
             // Aplique a cor do menu
             menu02.style.backgroundColor = "red";
         }
     });
 });
-
-
