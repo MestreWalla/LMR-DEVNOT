@@ -18,6 +18,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Quando o usuário passar o mouse em cima da div
+menu02.addEventListener("mouseenter", function() {
+    // Verifique se a animação já foi definida para none
+    var animation = menu02.style.animation;
+    if (animation === "none") {
+        // Redefina a animação
+        setMenuProperties(menu02, "showMenu 0.5s forwards infinite 1 ease-in-out", "blue");
+    }
+});
+
 // Função para definir as propriedades do menu
 function setMenuProperties(menu, animation, backgroundColor) {
     menu.style.animation = animation;
