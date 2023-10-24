@@ -10,12 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
         var scrollPosition = window.scrollY || window.pageYOffset;
         if (scrollPosition >= menuPosition) {
             // Aplique a animação e a cor do menu
-            menu02.style.animation = "showMenu 0.5s forwards infinite 1 ease-in-out";
-            menu02.style.backgroundColor = "blue";
+            setMenuProperties(menu02, "showMenu 0.5s forwards infinite 1 ease-in-out", "blue");
         } else {
-           menu02.style.animation = "none";
             // Aplique a cor do menu
-            menu02.style.backgroundColor = "red";
+            setMenuProperties(menu02, "none", "red");
         }
     });
 });
+
+// Função para definir as propriedades do menu
+function setMenuProperties(menu, animation, backgroundColor) {
+    menu.style.animation = animation;
+    menu.style.backgroundColor = backgroundColor;
+}
