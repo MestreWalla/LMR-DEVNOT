@@ -7,6 +7,7 @@
     --senary-color: green;
     --text-color: white;
   }
+
 iframe {
     display: none;
     position: fixed;
@@ -16,7 +17,17 @@ iframe {
     width: 500px;
     height: 500px;
     border-style: none;
+    animation: moveIframe 0.5s forwards;
 }
+@keyframes moveIframe {
+    from {
+        transform: translateX(-500%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 .loginCadastro {
     /* position: fixed; */
     display: flex;
@@ -55,6 +66,10 @@ iframe {
                 width: 100%;
                 border-radius: 10px;
                 font-weight: bold;
+                &:last-child {
+                    background-color: rgb(237, 128, 128);
+                    color: black;
+                }
             }
         } & .senha {
             display: flex;
@@ -75,5 +90,38 @@ iframe {
     } & h2 {
         font-size: 30px;
         align-self: center;
+    }
+}
+.fechar {
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    background-color: var(--tertiary-color);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    border: none;
+    & div:first-child {
+        background-color: black;
+        width: 20px;
+        height: 2px;
+        transform:rotate(-45deg);
+        position:absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    } & div:last-child {
+        background-color: black;
+        width: 2px;
+        height: 20px;
+        transform:rotate(-45deg);
+        position:absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
     }
 }
