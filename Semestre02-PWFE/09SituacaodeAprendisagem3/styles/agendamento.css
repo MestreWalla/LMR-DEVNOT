@@ -1,83 +1,78 @@
 .agendamento {
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
 }
+
 #appointment-form {
-    & form {
+  & form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    }
+  }
 }
+
 .tipoServico {
-    display: flex;
-    background-color: var(--primary-color);
-    height: 130px;
-    padding: 10px;
-    gap: 5px;
+  display: flex;
+  background-color: var(--primary-color);
+  height: 130px;
+  width: 130px;
+  padding: 10px;
+  gap: 5px;
 }
-.servicosInput {
-    all: unset;
-    /* display: none; */
-    transition: display 500ms linear;
-  }
-.servicoLabel {
-    background-color: red;
-    background-image: url("img/cao01.png");
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    &:checked {
-        background-color: green;
-    }
-  }
-  
-  . container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-palette: 22px;
-  }
-  .container input{
-    position: absolute;
-    opacity: 0
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 2px;
-  }
-  .container:hover input ~ .checkmark{
-    background-color: #ccc;
-  }
-  .container input:checked ~ .checkmark {
-    background-color: #ff0a54;
-  }
-  .container .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
-  }
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
+.servico {
+  display: flex;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 135px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-palette: 22px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background-image: url(../img/cao01.jpg);
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.container:hover input~.checkmark {
+  background-color: #cccccc;
+}
+
+.container input:checked~.checkmark {
+  background-color: #ff0a54;
+}
+
+.container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 20px;
+  top: 5px;
+  width: 10px;
+  height: 30px;
+  border: solid rgb(31, 154, 33);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.container input:checked~.checkmark:after {
+  display: block;
+}

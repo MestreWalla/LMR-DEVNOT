@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/agendamento.css">
     <title>Agendamento</title>
 </head>
+
 <body>
     <header class="header">
         <div class="menu01">
@@ -52,7 +53,7 @@
             <form id="appointment" action="agendamento.php" method="post">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
-    
+
                 <label for="service">Serviço:</label>
                 <!-- <select id="service" name="service" required>
                     <option value="servico1">Banho</option>
@@ -61,32 +62,47 @@
                 </select> -->
 
                 <div class="tipoServico">
-                  
-                 <label class="container">TESTE
-                   <input type="checkbox">
-                   <span class="checkmark"></span>
-                 </label>
-                  
-                    <label for="servico01" class="servicoLabel"></label>
-                    <input type="checkbox" id="servico01" class="servicosInput" />
-                    <label for="servico02" class="servicoLabel"></label>
-                    <input type="checkbox" id="servico02" class="servicosInput" />
-                    <label for="servico03" class="servicoLabel"></label>
-                    <input type="checkbox" id="servico03" class="servicosInput" />
-                    <label for="servico04" class="servicoLabel"></label>
-                    <input type="checkbox" id="servico04" class="servicosInput" />
+                    <div class="Servico">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <P>TESTE</P>
+                    </div>
+                    <div class="Servico">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <P>TESTE</P>
+                    </div>
+                    <div class="Servico">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <P>TESTE</P>
+                    </div>
+                    <div class="Servico">
+                        <label class="container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <P>TESTE</P>
+                    </div>
                 </div>
-    
+
                 <label for="date">Data:</label>
                 <input type="date" id="date" name="date" required>
-    
+
                 <label for="time">Horário:</label>
                 <input type="time" id="time" name="time" required>
 
                 <label for="obs">Observações:</label>
-                <textarea name="Observações" id="obs" cols="50" rows="5" placeholder="Escreva suas observações"></textarea> <!--campo para escrever-->
+                <textarea name="Observações" id="obs" cols="50" rows="5"
+                    placeholder="Escreva suas observações"></textarea> <!--campo para escrever-->
 
-    
+
                 <button type="submit">Agendar</button>
             </form>
         </section>
