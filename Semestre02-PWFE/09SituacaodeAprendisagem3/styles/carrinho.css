@@ -1,4 +1,4 @@
-header div{
+header, header div{
     background-color: yellow;
     height: 40px;
     width: 100%;
