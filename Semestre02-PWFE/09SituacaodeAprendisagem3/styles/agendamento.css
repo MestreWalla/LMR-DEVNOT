@@ -2,6 +2,7 @@
   margin-top: 120px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #appointment-form {
@@ -14,65 +15,18 @@
 
 .tipoServico {
   display: flex;
+  /* position: absolute; */
   background-color: var(--primary-color);
-  height: 130px;
-  width: 130px;
   padding: 10px;
-  gap: 5px;
+  border-radius: 10px;
+  height: 200px;
+  width: 100%;
+  & button {
+    height: 50%;
+  }
 }
-.servico {
-  display: flex;
-}
-
-.container {
-  display: block;
-  position: relative;
-  padding-left: 135px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-palette: 22px;
-}
-
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100px;
-  width: 100px;
-  background-image: url(../img/cao01.jpg);
-  background-size: cover;
-  border-radius: 2px;
-}
-
-.container:hover input~.checkmark {
-  background-color: #cccccc;
-}
-
-.container input:checked~.checkmark {
-  background-color: #ff0a54;
-}
-
-.container .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-  left: 20px;
-  top: 5px;
-  width: 10px;
-  height: 30px;
-  border: solid rgb(31, 154, 33);
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-}
-
-.container input:checked~.checkmark:after {
-  display: block;
+.lista {
+  background-color: white;
+  width: 100%;
+  /* height: 100%; */
 }

@@ -1,0 +1,9 @@
+header{
+    background-color: var(--primary-color);
+    height: 50px;
+    width: 100%;
+}
+
+img {
+    height: 40px;
+}
