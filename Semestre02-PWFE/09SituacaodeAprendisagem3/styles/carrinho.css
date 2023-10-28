@@ -1,5 +1,5 @@
-header{
-    background-color: var(--primary-color);
+header div{
+    background-color: yellow;
     height: 40px;
     width: 100%;
     display: flex;
