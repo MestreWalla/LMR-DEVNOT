@@ -1,4 +1,7 @@
 export class Curriculo {
+
+    // Atributos
+
     id: number = 0;
     nome: string = "";
     sobrenome: string = "";
@@ -10,6 +13,9 @@ export class Curriculo {
     habilidades: string = "";
     idiomas: string = "";
     certificacoes: string = "";
+
+    // Construtor
+
     constructor(
         id: number,
         nome: string,

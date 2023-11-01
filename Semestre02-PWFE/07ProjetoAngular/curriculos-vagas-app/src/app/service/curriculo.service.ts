@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Curriculo } from './model/curriculo.model';
+import { Curriculo } from '../model/curriculo.model';
 
 @Injectable({
   providedIn: 'root',
