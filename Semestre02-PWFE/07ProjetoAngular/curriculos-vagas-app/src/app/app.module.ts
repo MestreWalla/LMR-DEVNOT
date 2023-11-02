@@ -9,6 +9,8 @@ import { VagasComponent } from './vagas/vagas.component';
 import { FooterComponent } from './basic/footer/footer.component';
 import { HeaderComponent } from './basic/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PainelVagasComponent } from './painel-vagas/painel-vagas.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CurriculosComponent,
     VagasComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    PainelVagasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
