@@ -2,6 +2,7 @@ export class Curriculo {
 
     // Atributos
 
+    icon: string = "";
     id: number = 0;
     nome: string = "";
     sobrenome: string = "";

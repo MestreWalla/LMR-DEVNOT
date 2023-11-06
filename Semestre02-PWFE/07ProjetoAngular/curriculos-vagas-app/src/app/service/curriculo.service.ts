@@ -6,6 +6,9 @@ import { Curriculo } from '../model/curriculo.model';
   providedIn: 'root',
 })
 export class CurriculoService {
+  getVagas() {
+    throw new Error('Method not implemented.');
+  }
   private apiUrl = 'assets/curriculos.json'; // Caminho para o arquivo JSON (pode ser ajustado)
   constructor(private http: HttpClient) { }
 

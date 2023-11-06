@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InicioComponent } from './inicio/inicio.component';
-import { CurriculosComponent } from './curriculos/curriculos.component';
-import { VagasComponent } from './vagas/vagas.component';
-import { PainelVagasComponent } from './painel-vagas/painel-vagas.component';
+import { InicioComponent } from './views/inicio/inicio.component';
+import { CurriculosComponent } from './views/curriculos/curriculos.component';
+import { VagasComponent } from './views/vagas/vagas.component';
+import { PainelVagasComponent } from './views/painel-vagas/painel-vagas.component';
 
 const routes: Routes = [
   { path: '', component: InicioComponent }, // Rota para a página inicial
