@@ -6,9 +6,9 @@
     --quinary-color: green;
     --senary-color: green;
     --text-color: white;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -29,14 +29,21 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: var(--primary-color);
+
+    &:nth-child(1) {
+        border-radius: 10px 0 0 0;
+    } &:nth-child(5) {
+        border-radius: 0 10px 0 0;
+    }
 }
 
 tr a {
@@ -45,10 +52,11 @@ tr a {
     /* background-color: var(--primary-color); */
     color: #fff;
     border-radius: 5px;
-}
-
-tr a:hover {
-    background-color: red;
+    &:hover {
+        background-color: red;
+    } &:active {
+        background-color: rgb(164, 0, 0);
+    }
 }
 
 tr:nth-child(even) {
@@ -78,8 +86,20 @@ tr:nth-child(even) {
 }
 
 .quantity-input {
-    width: 40px;
+    width: 30px;
     text-align: center;
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* input::-webkit-outer-spin-button, */
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .quantity-button {
