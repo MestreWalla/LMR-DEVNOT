@@ -25,7 +25,7 @@ body {
     padding: 10px;
 }
 
-img {
+.header img {
     height: 50px;
     border-radius: 50%;
 }
@@ -125,6 +125,8 @@ header:hover>.menu02 {
 
 .content {
     margin-top: 160px;
+    max-width: 900px;
+    width: 900px;
 }
 
 @media only screen and (max-width: 780px) and (orientation: portrait) {
