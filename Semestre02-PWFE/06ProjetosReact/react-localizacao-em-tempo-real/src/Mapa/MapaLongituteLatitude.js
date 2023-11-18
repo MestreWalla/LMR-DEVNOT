@@ -29,26 +29,27 @@ const MapaLongitudeLatitude = () => {
     };
     return (
         <div className="App">
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'row', margin: '10px' }}>
                 {/* Campo de entrada para a latitude */}
-                <label>Latitude:</label>
+                <label style={{marginLeft: '10px'}}>Latitude:</label>
                 <input
                     type="text"
                     value={latitude}
                     onChange={(e) => setLatitude(e.target.value)}
+                    style={{marginLeft: '10px'}}
                 />
-            </div>
-            <div>
                 {/* Campo de entrada para a longitude */}
-                <label>Longitude:</label>
+                <label style={{marginLeft: '10px'}}>Longitude:</label>
                 <input
                     type="text"
                     value={longitude}
                     onChange={(e) => setLongitude(e.target.value)}
+                    style={{marginLeft: '10px'}}
                 />
+
+                {/* Botão para adicionar uma marcação ao mapa */}
+                <button onClick={handleAddMarker} style={{marginLeft: '10px'}}>Adicionar Marcação</button>
             </div>
-            {/* Botão para adicionar uma marcação ao mapa */}
-            <button onClick={handleAddMarker}>Adicionar Marcação</button>
             {/* Componente MapContainer para exibir o mapa */}
             <MapContainer center={[0, 0]} zoom={2} style={{ height: '400px', width: '100%' }}>
                 {/* Camada de azulejos (tiles) do OpenStreetMap */}

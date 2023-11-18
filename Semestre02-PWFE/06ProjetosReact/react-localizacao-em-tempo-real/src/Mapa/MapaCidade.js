@@ -42,19 +42,15 @@ const MapaCidade = () => {
     };
     return (
         <div className="App">
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'row', margin: '10px'}}>
                 {/* Campo de entrada para o nome da cidade */}
                 <label>Nome da Cidade:</label>
-                <input
-                    type="text"
-                    value={cityName}
-                    onChange={(e) => setCityName(e.target.value)}
-                />
+                <input type="text" value={cityName} onChange={(e) => setCityName(e.target.value)} style={{marginLeft: '10px'}}/>
                 {/* Botão para acionar a pesquisa da cidade */}
-                <button onClick={handleSearch}>Pesquisar</button>
+                <button onClick={handleSearch} style={{marginLeft: '10px'}}>Pesquisar</button>
             </div>
             {/* Componente do mapa usando react-leaflet */}
-            <MapContainer center={[0, 0]} zoom={2} style={{ height: '400px', width: '100%' }}>
+            <MapContainer center={[0, 0]} zoom={2} style={{ height: '400px', width: '100%'}}>
                 {/* Camada de bases (tiles) do OpenStreetMap */}
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

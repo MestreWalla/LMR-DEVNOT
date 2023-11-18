@@ -7,6 +7,11 @@ import MapaCidade from './Mapa/MapaCidade';
 function App() {
   return (
     <div className="App">
+      <p>MAPA ATUAL</p>
+      <MapaAtual />
+      <p>MAPA LONGITUDE LATITUDE</p>
+      <MapaLongitudeLatitude />
+      <p>MAPA CIDADE</p>
       <MapaCidade />
     </div>
   );

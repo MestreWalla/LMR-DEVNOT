@@ -26,7 +26,7 @@ function MapaAtual() {
         <div className="App">
             {/* Renderiza o componente MapContainer da biblioteca react-leaflet */}
             <MapContainer center={position} zoom={3} style={{
-                height: '800px', width: '100%'
+                height: '400px', width: '100%'
             }}>
                 {/* Adiciona uma camada de azulejos (tiles) do OpenStreetMap ao mapa */}
                 <TileLayer
